@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamouda Alfahal</title>
+    <!-- Show an icon on the top of the browser -->
+    <link
+      rel="shortcut icon"
+      type="images/x-icon"
+      href="images/logo-icon.png"
+    />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Light-mode CSS File-->
+    <link rel="stylesheet" href="css/light-mode" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-----------------------------------------start header-------------------------------------------->
+    <header id="index.html">
+      <div class="container">
+        <div class="logo"><a href="index.html">Hamouda</a></div>
+        <i class="fas fa-bars toggle-menu" onclick="toggleMenu()"></i>
+        <nav>
+          <ul id="ul">
+            <li><a href="#index.html" class="btn">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#bio">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="fas fa-lightbulb" onclick="lightMode()"></i>
+        </nav>
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-star" id="star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </header>
+    <div class="wave">
+      <svg viewBox="0 0 450 130" preserveAspectRatio="xMinYMin meet">
+        <path d="M0,100 C150,200 350,0 500,120 L500,00 L0,0 Z"></path>
+      </svg>
+    </div>
+    <!-------------------------------------------Start Landing------------------------------------------->
+    <landing>
+      <div class="left-box">
+        <div class="text">
+          <h3>Welcome, my name is:</h3>
+          <h1>Hamouda Alfahal</h1>
+          <p>I'm Web Front-End Developer</p>
+          <a href="#" class="btn">Resume</a>
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+      </div>
+      <div class="right-box">
+        <img src="images/work-steps.png" alt="" />
+      </div>
+    </landing>
+    <!----------------------------------------------Start Work----------------------------------------->
+    <work id="work">
+      <h2>Work</h2>
+      <div class="container">
+        <div class="projects scroll-element js-scroll fade-in">
+          <a href="" class="work-img">
+            <img src="images/work1.jpg" alt="" />
+          </a>
+          <a href="" class="work-img">
+            <img src="images/work2.jpg" alt="" />
+          </a>
+          <a href="" class="work-img">
+            <img src="images/work3.jpg" alt="" />
+          </a>
+          <a href="" class="work-img">
+            <img src="images/work4.jpg" alt="" />
+          </a>
+          <a href="" class="work-img">
+            <img src="images/work5.jpg" alt="" />
+          </a>
+          <a href="" class="work-img">
+            <img src="images/work6.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </work>
+    <!----------------------------------------------Start Bio----------------------------------------->
+    <bio id="bio">
+      <h2>About</h2>
+      <div class="container scroll-element js-scroll fade-in">
+        <svg
+          class="blob"
+          viewBox="0 0 479 467"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <mask id="mask0" mask-type="alpha">
+            <path
+              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+            />
+          </mask>
+          <g mask="url(#mask0)">
+            <path
+              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+            />
+            <image class="img" x="80" y="40" href="images/portfolio.png" />
+          </g>
+        </svg>
+        <div class="skills">
+          <h3>Skills & Tools</h3>
+          <div>
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div>
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div>
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <i class="fab fa-git-alt"></i>
+            <p>git</p>
+          </div>
+          <div>
+            <i class="fab fa-github"></i>
+            <p>
+              <a href="https://github.com/anow47" target="_blank">github</a>
+            </p>
+          </div>
+          <div>
+            <i class="fab fa-react"></i>
+            <p>React</p>
+          </div>
+          <div>
+            <i class="fab fa-digital-ocean"></i>
+            <p>Digital Ocean</p>
+          </div>
+          <div>
+            <i class="fas fa-database"></i>
+            <p>JSON & API</p>
+          </div>
+          <div>
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+          </div>
+          <div>
+            <i class="fab fa-bootstrap"></i>
+            <p>bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </bio>
+
+    <!------------------------------------------Start Contact---------------------------------------->
+    <contact id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="scroll-element js-scroll fade-in">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+          <textarea placeholder=""></textarea>
+          <button type="submit" class="">send</button>
+        </form>
+      </div>
+    </contact>
+    <!------------------------------------------Start Footer---------------------------------------->
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright 2021 <a href="#">Hamouda</a> All Rights Reserved
+        </div>
+        <div class="icons">
+          <a
+            href="https://www.linkedin.com/in/hamouda-mohammed-81830370/"
+            target="_blank"
+          >
+            <div class="icon-1"><i class="fab fa-linkedin"></i></div>
+          </a>
+          <a href="https://web.facebook.com/anow47" target="_blank">
+            <div class="icon-2"><i class="fab fa-facebook-f"></i></div>
+          </a>
+          <a href="https://twitter.com/@Hamouda_21" target="_blank">
+            <div class="icon-3"><i class="fab fa-twitter"></i></div>
+          </a>
+          <a href="https://instagram.com/anow47" target="_blank">
+            <div class="icon-4"><i class="fab fa-instagram"></i></div>
+          </a>
+          <a href="https://github.com/anow47" target="_blank">
+            <div class="icon-5"><i class="fab fa-github"></i></div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
