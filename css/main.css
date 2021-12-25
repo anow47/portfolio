@@ -289,6 +289,7 @@ svg {
   position: absolute;
   top: 0;
   left: 0;
+  padding: 62px 0;
 }
 svg path {
   stroke: none;
@@ -398,6 +399,11 @@ work .projects {
   width: 300px;
   border-radius: 10px;
   margin: 5px -5px;
+}
+@media (max-width: 768px) {
+  .work-img img {
+    width: 200px;
+  }
 }
 .work-img img:hover {
   transform: scale(1.1);
@@ -515,8 +521,8 @@ textarea {
 @media (max-width: 768px) {
   contact form input,
   textarea {
-    width: 120%;
-    margin: 10px -30px 0;
+    width: 130%;
+    margin: 10px -32px 0;
   }
 }
 textarea {
