@@ -203,7 +203,6 @@ header nav ul {
     animation: bounceInLeft 1s;
   }
 }
-
 header nav ul li {
   list-style-type: none;
   padding: 0px 10px;
@@ -226,6 +225,9 @@ header nav ul li a {
 }
 header nav ul li a {
   padding: 15px !important;
+}
+header nav ul li a:hover {
+  color: var(--main-color);
 }
 @media (max-width: 768px) {
   header nav ul li a {
@@ -623,7 +625,7 @@ footer .icons a {
   color: #000;
 }
 
-/**********************************Styling scrollable elements**************************************/
+/******************************************Styling scrollable elements**************************************/
 
 .js-scroll {
   opacity: 0;
