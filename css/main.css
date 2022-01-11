@@ -527,6 +527,7 @@ textarea {
   margin: 10px 0 0;
   background-color: #414141;
   color: var(--text-color);
+  outline: none;
 }
 @media (max-width: 768px) {
   contact form input,
