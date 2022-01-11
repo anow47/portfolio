@@ -1,8 +1,8 @@
 /* Start Global Rules*/
 :root {
-  --first-bg-color: #212121;
+  --bg-color: #212121;
   --main-color: #9c1d8b; /* old color #9c1d8b / new color #7439a7 */
-  --text-color: #ebebeb;
+  --second-color: #ebebeb;
   --section-padding: 100px;
 }
 * {
@@ -17,7 +17,7 @@ html {
 }
 body {
   font-family: sans-serif;
-  background-color: var(--first-bg-color);
+  background-color: var(--bg-color);
 }
 .container {
   padding-left: 15px;
@@ -33,7 +33,7 @@ body {
   padding: 12px 20px;
   text-decoration: none;
   font-size: 16px;
-  color: var(--text-color);
+  color: var(--second-color);
   transition: 0.5s;
   background: linear-gradient(to right, var(--main-color) 50%, #212121 50%);
   background-size: 200% 100%;
@@ -50,7 +50,7 @@ body {
     padding: 9px 10px;
     text-decoration: none;
     font-size: 16px;
-    color: var(--text-color);
+    color: var(--second-color);
     transition: 0.5s;
     background: linear-gradient(to right, #212121 50%, #212121 50%);
     background-size: 200% 100%;
@@ -65,7 +65,7 @@ body {
     padding: 9px 10px;
     text-decoration: none;
     font-size: 16px;
-    color: var(--text-color);
+    color: var(--second-color);
     transition: 0.5s;
     background: linear-gradient(to right, #212121 50%, #212121 50%);
     background-size: 200% 100%;
@@ -79,7 +79,7 @@ h2 {
   margin: 0 0 20px;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--text-color);
+  color: var(--second-color);
   padding-bottom: 40px;
   padding: 20px 0;
 }
@@ -109,7 +109,7 @@ h2 {
 }
 /* End Global Rules*/
 
-/********************************************Start Hearder***************************************************/
+/*=======================================Start Hearder=======================================*/
 header .container {
   padding-bottom: 70px;
   position: relative;
@@ -136,7 +136,7 @@ header .container {
   }
 }
 header .fa-lightbulb {
-  color: var(--text-color);
+  color: var(--second-color);
   font-size: 20px;
   cursor: pointer;
   left: 18px;
@@ -155,7 +155,7 @@ header .fa-lightbulb {
 header .container .logo a {
   text-decoration: none;
   font-size: 20px;
-  color: var(--text-color);
+  color: var(--second-color);
   font-weight: normal;
 
   font-family: cursive;
@@ -221,13 +221,13 @@ header nav ul li a {
   text-decoration: none;
   font-size: 15px;
   text-transform: uppercase;
-  color: var(--text-color);
+  color: var(--second-color);
 }
 header nav ul li a {
   padding: 15px !important;
 }
 header nav ul li a:hover {
-  color: var(--main-color);
+  color: var(--second-color);
 }
 @media (max-width: 768px) {
   header nav ul li a {
@@ -259,14 +259,14 @@ header nav ul li a.btn {
   left: 30%;
 }
 .fa-star {
-  color: var(--text-color);
+  color: var(--second-color);
   font-size: 3px;
   position: absolute;
   top: 50%;
   right: 42%;
 }
 #star {
-  color: var(--text-color);
+  color: var(--second-color);
   font-size: 3px;
   position: absolute;
   top: 80%;
@@ -318,7 +318,7 @@ svg path {
   transform: rotateZ(180deg);
   transition: 0.7s;
 }
-/********************************************Start Landing*************************************************/
+/*=======================================Start Landing=======================================*/
 landing {
   position: relative;
   height: 450px;
@@ -347,7 +347,7 @@ landing .left-box {
   }
 }
 landing .left-box .text h1 {
-  color: var(--text-color);
+  color: var(--second-color);
   font-size: 40px;
 }
 landing .left-box .text h3 {
@@ -355,7 +355,7 @@ landing .left-box .text h3 {
   font-size: 15px;
 }
 landing .left-box .text p {
-  color: var(--text-color);
+  color: var(--second-color);
   padding-bottom: 30px;
 }
 @media (max-width: 768px) {
@@ -391,7 +391,7 @@ landing .right-box img {
     top: 100px;
   }
 }
-/********************************************Start Work***************************************************/
+/*=======================================Start Work=======================================*/
 work .container {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -418,7 +418,7 @@ work .projects {
 .work-img img:hover {
   transform: scale(1.1);
 }
-/********************************************Start Bio***************************************************/
+/*=======================================Start Bio=======================================*/
 bio .container {
   display: flex;
 }
@@ -471,7 +471,7 @@ bio .skills i {
 }
 bio .skills p,
 a {
-  color: var(--text-color);
+  color: var(--second-color);
   padding: 0px 10px;
   transform: translateY(3px);
   font-size: 13px;
@@ -507,7 +507,7 @@ a {
 .fa-bootstrap {
   color: #bf86ff;
 }
-/********************************************Start contact***************************************************/
+/*=======================================Start contact=======================================*/
 contact .container {
   position: relative;
   padding-top: var(--section-padding);
@@ -526,7 +526,7 @@ textarea {
   border-radius: 5px;
   margin: 10px 0 0;
   background-color: #414141;
-  color: var(--text-color);
+  color: var(--second-color);
   outline: none;
 }
 @media (max-width: 768px) {
@@ -566,7 +566,7 @@ contact form button:hover {
     margin: 12px 0px 50px -31px;
   }
 }
-/********************************************Start Footer***************************************************/
+/*=======================================Start Footer=======================================*/
 footer {
   border-top: 1px solid var(--main-color);
 }
@@ -587,7 +587,7 @@ footer .container {
 }
 
 footer .copyright {
-  color: var(--text-color);
+  color: var(--second-color);
   font-size: 15px;
 }
 footer .copyright a {
@@ -608,7 +608,7 @@ footer .icons {
 footer .icons a {
   padding: 0px 15px;
   font-size: 17px;
-  color: var(--text-color);
+  color: var(--second-color);
 }
 .icon-1:hover {
   color: #4267b2;
@@ -626,7 +626,7 @@ footer .icons a {
   color: #000;
 }
 
-/******************************************Styling scrollable elements**************************************/
+/*=======================================Styling scrollable elements=======================================*/
 
 .js-scroll {
   opacity: 0;
@@ -649,7 +649,7 @@ footer .icons a {
   }
 }
 
-/*********bounceInRight the toggle menu when clicked********/
+/*=======bounceInRight the toggle menu when clicked========*/
 @-webkit-keyframes bounceInLeft {
   from,
   60%,

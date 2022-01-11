@@ -1,4 +1,4 @@
-//////////////////////////////////////////// dark mode function
+//=============================dark mode function
 function lightMode() {
   let element = document.body;
   element.classList.toggle("light-mode");
@@ -13,7 +13,7 @@ function toggleMenu() {
   }
 }
 
-////////////////////////////// Animation on scroll element fade-in
+//=============================Animation on scroll element fade-in
 
 const scrollElements = document.querySelectorAll(".js-scroll");
 
