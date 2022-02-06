@@ -41,6 +41,7 @@ body {
 }
 .btn:hover {
   background-position: left bottom;
+  color: var(--second-color);
 }
 @media (max-width: 768px) {
   .btn {
@@ -228,7 +229,7 @@ header nav ul li a {
   padding: 15px !important;
 }
 header nav ul li a:hover {
-  color: var(--second-color);
+  color: var(--main-color);
 }
 @media (max-width: 768px) {
   header nav ul li a {
@@ -353,7 +354,7 @@ landing .left-box .text h1 {
 }
 landing .left-box .text h3 {
   color: var(--main-color);
-  font-size: 15px;
+  font-size: 17px;
 }
 landing .left-box .text p {
   color: var(--second-color);
@@ -449,7 +450,7 @@ bio .skills {
   }
 }
 bio .skills h3 {
-  color: var(--main-color);
+  color: var(--second-color);
   font-weight: normal;
   padding-bottom: 20px;
   text-align: center;
