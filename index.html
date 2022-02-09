@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamouda Mohammed</title>
-    <!-- Show an icon on the top of the browser -->
+    <!-- Shows an icon on the top of the browser -->
     <link
       rel="shortcut icon"
       type="images/x-icon"
@@ -28,7 +28,7 @@
     />
   </head>
   <body>
-    <!---=======================================start header=======================================-->
+    <!---======start header======-->
     <header id="index.html">
       <div class="container">
         <div class="logo"><a href="index.html">Hamouda</a></div>
@@ -52,7 +52,7 @@
         <path d="M0,100 C150,200 350,0 500,120 L500,00 L0,0 Z"></path>
       </svg>
     </div>
-    <!--=======================================---Start Landing=======================================-->
+    <!--======Start Landing======-->
     <landing>
       <div class="left-box">
         <div class="text">
@@ -73,24 +73,27 @@
         <img src="images/work-steps.png" alt="" />
       </div>
     </landing>
-    <!--=======================================Start Work=======================================-->
+    <!--======Start Work======-->
     <work id="work">
       <h2>Work</h2>
       <div class="container">
         <div class="projects scroll-element js-scroll fade-in">
-          <a href="" class="work-img">
-            <img src="work/Bisa Tech.png" alt="BisaTech" />
-          </a>
-          <a href="" class="work-img">
-            <img src="work/Hamouda portfolio.png" alt="mini-portfolio" />
-          </a>
-          <a href="" class="work-img">
-            <img src="work/Shopping.png" alt="first-portfolio" />
-          </a>
+          <img id="myImg" src="work/Shopping.png" alt="Shopping" />
+
+          <img id="myImg" src="work/portfolio.png" alt="mini-portfolio" />
+
+          <img id="myImg" src="work/Bisa Tech.png" alt="BisaTech" />
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div id="caption"></div>
         </div>
       </div>
     </work>
-    <!--=======================================Start Bio=======================================-->
+    <!--======Start Bio======-->
     <bio id="bio">
       <h2>About</h2>
       <div class="container scroll-element js-scroll fade-in">
@@ -160,7 +163,7 @@
       </div>
     </bio>
 
-    <!--=======================================Start Contact=======================================-->
+    <!--======Start Contact======-->
     <contact id="contact">
       <div class="container">
         <h2>Contact</h2>
@@ -172,7 +175,7 @@
         </form>
       </div>
     </contact>
-    <!--=======================================Start Footer=======================================-->
+    <!--======Start Footer======-->
     <footer>
       <div class="container">
         <div class="copyright">

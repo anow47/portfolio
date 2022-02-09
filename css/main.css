@@ -110,7 +110,7 @@ h2 {
 }
 /* End Global Rules*/
 
-/*=======================================Start Hearder=======================================*/
+/*==========Start Hearder==========*/
 header .container {
   padding-bottom: 70px;
   position: relative;
@@ -320,7 +320,7 @@ svg path {
   transform: rotateZ(180deg);
   transition: 0.7s;
 }
-/*=======================================Start Landing=======================================*/
+/*==========Start Landing==========*/
 landing {
   position: relative;
   height: 450px;
@@ -393,7 +393,7 @@ landing .right-box img {
     top: 100px;
   }
 }
-/*=======================================Start Work=======================================*/
+/*==========Start Work==========*/
 work .container {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -401,26 +401,88 @@ work .container {
 work .projects {
   text-align: center;
 }
-.work-img {
-  border-radius: 10px;
-  max-width: 100%;
-}
-.work-img img {
-  transition: 0.5s;
+
+/*====Popup Images====*/
+#myImg {
   width: 300px;
   height: 500px;
   border-radius: 10px;
-  margin: 5px -5px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-@media (max-width: 768px) {
-  .work-img img {
-    width: 200px;
-  }
+img {
+  width: 100%;
+  max-width: 300px;
 }
-.work-img img:hover {
+#myImg:hover {
+  opacity: 0.7;
   transform: scale(1.1);
 }
-/*=======================================Start Bio=======================================*/
+
+/* The Modal (background) */
+work .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+work .modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+work #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 20px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+work .modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* The Close Button */
+work .close {
+  position: fixed;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+work .close:hover,
+work .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*==========Start Bio==========*/
 bio .container {
   display: flex;
 }
@@ -509,7 +571,7 @@ a {
 .fa-bootstrap {
   color: #bf86ff;
 }
-/*=======================================Start contact=======================================*/
+/*==========Start contact==========*/
 contact .container {
   position: relative;
   padding-top: var(--section-padding);
@@ -568,7 +630,7 @@ contact form button:hover {
     margin: 12px 0px 50px -31px;
   }
 }
-/*=======================================Start Footer=======================================*/
+/*==========Start Footer==========*/
 footer {
   border-top: 1px solid var(--main-color);
 }
@@ -628,7 +690,26 @@ footer .icons a {
   color: #000;
 }
 
-/*=======================================Styling scrollable elements=======================================*/
+/*==========Zoom out Work images==========*/
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/*==========Styling scrollable elements==========*/
 
 .js-scroll {
   opacity: 0;
