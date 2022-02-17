@@ -513,11 +513,7 @@ bio .skills_container {
   display: block;
   width: 100%;
 }
-@media (max-width: 768px) {
-  bio .skills_container {
-    height: 400px;
-  }
-}
+
 bio .skills {
   display: block;
   text-align: center;
@@ -648,7 +644,7 @@ contact .container {
 }
 @media (max-width: 768px) {
   contact .container {
-    padding-top: 0;
+    padding-top: 20px;
   }
 }
 contact form {
