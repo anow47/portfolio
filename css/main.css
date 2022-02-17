@@ -307,14 +307,6 @@ svg path {
     padding: 62px 0;
   }
 }
-/* .wave {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  vertical-align: middle;
-  overflow: hidden;
-} */
 .light-mode header .fa-lightbulb {
   color: #000;
   transform: rotateZ(180deg);
@@ -362,10 +354,10 @@ landing .left-box .text p {
 }
 @media (max-width: 768px) {
   landing .left-box .text h3 {
-    font-size: 16px;
+    font-size: 15px;
   }
   landing .left-box .text h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin: 10px 0;
   }
   landing .left-box .text p {
@@ -403,7 +395,7 @@ work .projects {
 }
 
 /*====Popup Images====*/
-#myImg {
+work .projects > img {
   width: 300px;
   height: 500px;
   border-radius: 10px;
@@ -411,11 +403,19 @@ work .projects {
   cursor: pointer;
   transition: 0.3s;
 }
-img {
-  width: 100%;
-  max-width: 300px;
+@media (max-width: 767px) {
+  work .projects > img {
+    width: 120px;
+    height: 300px;
+  }
 }
-#myImg:hover {
+@media (max-width: 991px) {
+  work .projects > img {
+    width: 200px;
+    height: 300px;
+  }
+}
+work .projects img:hover {
   opacity: 0.7;
   transform: scale(1.1);
 }
@@ -501,6 +501,10 @@ bio .blob .img {
   margin: 40px auto;
   max-width: 100%;
 }
+bio .skills_container {
+  display: block;
+  width: 110%;
+}
 bio .skills {
   display: block;
   text-align: center;
@@ -570,6 +574,39 @@ a {
 }
 .fa-bootstrap {
   color: #bf86ff;
+}
+/*======More About Me======*/
+.about_me {
+  text-align: center;
+  margin-top: 100px;
+}
+.about_me button {
+  cursor: pointer;
+  display: grid;
+  margin: 10px auto;
+  background-color: #3b3737;
+  color: #df4d18;
+  padding: 10px 10px;
+  border-radius: 7px;
+  border: #3b3737;
+  font-size: 17px;
+}
+.about_me p {
+  width: 80%;
+  margin: 10px auto;
+  color: var(--second-color);
+  line-height: 25px;
+  display: none;
+  animation: drop-down 0.5s ease-out;
+}
+
+@keyframes drop-down {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 /*==========Start contact==========*/
 contact .container {
