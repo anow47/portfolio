@@ -405,8 +405,16 @@ work .projects > img {
 }
 @media (max-width: 767px) {
   work .projects > img {
-    width: 120px;
+    width: 150px;
     height: 300px;
+    display: block;
+    margin: 10px auto;
+  }
+}
+@media (min-width: 992px) {
+  work .projects > img {
+    width: 288px;
+    height: 500px;
   }
 }
 @media (max-width: 991px) {
@@ -503,16 +511,21 @@ bio .blob .img {
 }
 bio .skills_container {
   display: block;
-  width: 110%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  bio .skills_container {
+    height: 400px;
+  }
 }
 bio .skills {
   display: block;
   text-align: center;
-  transform: translateY(35%);
+  margin-top: 20px;
 }
 @media (max-width: 991px) {
   bio .skills {
-    transform: translateY(10%);
+    margin-top: 0px;
   }
 }
 bio .skills h3 {
@@ -527,6 +540,12 @@ bio .skills > div {
   display: inline-flex;
   background-color: #3b3737;
   margin: 10px;
+}
+@media (max-width: 991px) {
+  bio .skills > div {
+    padding: 3px;
+    margin: 3px;
+  }
 }
 @media (max-width: 768px) {
   bio .skills > div {
@@ -578,7 +597,17 @@ a {
 /*======More About Me======*/
 .about_me {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .about_me {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .about_me {
+    margin-top: 20px;
+  }
 }
 .about_me button {
   cursor: pointer;
@@ -599,7 +628,11 @@ a {
   display: none;
   animation: drop-down 0.5s ease-out;
 }
-
+@media (max-width: 991px) {
+  .about_me p {
+    font-size: 14px;
+  }
+}
 @keyframes drop-down {
   from {
     transform: scale(0);
@@ -612,6 +645,11 @@ a {
 contact .container {
   position: relative;
   padding-top: var(--section-padding);
+}
+@media (max-width: 768px) {
+  contact .container {
+    padding-top: 0;
+  }
 }
 contact form {
   width: 60%;
