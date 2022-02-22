@@ -10,7 +10,7 @@
       rel="shortcut icon"
       type="images/x-icon"
       href="images/portfolio.png"
-      />
+    />
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Font Awesome Library -->
@@ -25,7 +25,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap"
       rel="stylesheet"
-      />
+    />
   </head>
   <body>
     <!---======start header======-->
@@ -63,7 +63,9 @@
             href="resume/Hamouda-Mohammed.pdf"
             open="Hamouda-Mohammed"
             target="_blank"
-            class="btn">Resume</a>
+            class="btn"
+            >Resume</a
+          >
           <a href="#work" class="btn">My Work</a>
         </div>
       </div>
@@ -76,10 +78,33 @@
       <h2>Work</h2>
       <div class="container">
         <div class="projects scroll-element js-scroll fade-in">
-          <img id="image1" src="work/Shopping.png" alt="Shopping" />
-
-          <img id="image2" src="work/portfolio.png" alt="portfolio" />
-          <img id="image3" src="work/Bisa Tech.png" alt="BisaTech" />
+          <div class="projects_items">
+            <img id="image1" src="work/Shopping.png" alt="Techi" />
+            <a
+              class="link"
+              href="https://github.com/anow47/Techi"
+              target="_balnk"
+              >View on github</a
+            >
+          </div>
+          <div class="projects_items">
+            <img id="image2" src="work/portfolio.png" alt="portfolio" />
+            <a
+              class="link"
+              href="https://github.com/anow47/portfolio"
+              target="_balnk"
+              >View on github</a
+            >
+          </div>
+          <div class="projects_items">
+            <img id="image3" src="work/Bisa Tech.png" alt="BisaTech" />
+            <a
+              class="link"
+              href="https://github.com/anow47/BisaTech"
+              target="_balnk"
+              >View on github</a
+            >
+          </div>
         </div>
 
         <!-- The Modal -->
@@ -98,7 +123,8 @@
           class="blob"
           viewBox="0 0 479 467"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
           <mask id="mask0" mask-type="alpha">
             <path
               d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
@@ -107,121 +133,119 @@
               294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442
               466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835
               299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-            </mask>
-            <g mask="url(#mask0)">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
+            />
+          </mask>
+          <g mask="url(#mask0)">
+            <path
+              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
                 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207
                 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931
                 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442
                 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835
                 299.81 -17.1617 219.583 9.19024 145.964Z"
-                />
-                <image class="img" x="80" y="40" href="images/portfolio.png" />
-                </g>
-              </svg>
-              <div class="skills_container">
-                <div class="skills">
-                  <h3>Skills & Tools</h3>
-                  <div>
-                    <i class="fab fa-html5"></i>
-                    <p>HTML</p>
-                  </div>
-                  <div>
-                    <i class="fab fa-css3-alt"></i>
-                    <p>CSS / SCSS</p>
-                  </div>
-                  <div>
-                    <i class="fab fa-js-square"></i>
-                    <p>JavaScript</p>
-                  </div>
-                  <div>
-                    <i class="fab fa-git-alt"></i>
-                    <p>git</p>
-                  </div>
-                  <div>
-                    <i class="fab fa-github"></i>
-                    <p>
-                      <a href="https://github.com/anow47" target="_blank">github</a>
-                    </p>
-                  </div>
-                  <div>
-                    <i class="fab fa-react"></i>
-                    <p>React js</p>
-                  </div>
-                  <div>
-                    <i class="fab fa-unit-test"></i>
-                    <p>JEST UNIT TEST</p>
-                  </div>
-                  <div>
-                    <i class="fas fa-api"></i>
-                    <p>JSON & APIs</p>
-                  </div>
-                  <div>
-                    <i class="fab fa-python"></i>
-                    <p>Python</p>
-                  </div>
-                  <div>
-                    <i class="fab fa-bootstrap"></i>
-                    <p>Bootstrap</p>
-                  </div>
-                </div>
-                <div class="about_me" id="about_me">
-                  <button onclick="showMore()">Read about me...</button>
-                  <p id="text">
-                    Hello, I'm Hamouda from Sudan, a self taught developer who's
-                    passionate about tech and web development in particular; I
-                    use
-                    different languages and tools to accomplish the best
-                    results. My
-                    strong suits are HTML, CSS and JavaScript.
-                  </p>
-                </div>
-              </div>
+            />
+            <image class="img" x="80" y="40" href="images/portfolio.png" />
+          </g>
+        </svg>
+        <div class="skills_container">
+          <div class="skills">
+            <h3>Skills & Tools</h3>
+            <div>
+              <i class="fab fa-html5"></i>
+              <p>HTML</p>
             </div>
-          </bio>
+            <div>
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS / SCSS</p>
+            </div>
+            <div>
+              <i class="fab fa-js-square"></i>
+              <p>JavaScript</p>
+            </div>
+            <div>
+              <i class="fab fa-git-alt"></i>
+              <p>git</p>
+            </div>
+            <div>
+              <i class="fab fa-github"></i>
+              <p>
+                <a href="https://github.com/anow47" target="_blank">github</a>
+              </p>
+            </div>
+            <div>
+              <i class="fab fa-react"></i>
+              <p>React js</p>
+            </div>
+            <div>
+              <i class="fab fa-unit-test"></i>
+              <p>JEST UNIT TEST</p>
+            </div>
+            <div>
+              <i class="fas fa-api"></i>
+              <p>JSON & APIs</p>
+            </div>
+            <div>
+              <i class="fab fa-python"></i>
+              <p>Python</p>
+            </div>
+            <div>
+              <i class="fab fa-bootstrap"></i>
+              <p>Bootstrap</p>
+            </div>
+          </div>
+          <div class="about_me" id="about_me">
+            <button onclick="showMore()">Read about me...</button>
+            <p id="text">
+              Hello, I'm Hamouda , a self taught developer who's passionate
+              about tech and web development in particular; I use different
+              technologies and tools to accomplish the best results. My main
+              tools are HTML, CSS and JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+    </bio>
 
-          <!--======Start Contact======-->
-          <contact id="contact">
-            <div class="container">
-              <h2>Contact</h2>
-              <form class="scroll-element js-scroll fade-in">
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <textarea placeholder=""></textarea>
-                <button type="submit" class="">send</button>
-              </form>
-            </div>
-          </contact>
-          <!--======Start Footer======-->
-          <footer>
-            <div class="container">
-              <div class="copyright">
-                &copy; Copyright 2021 <a href="#">Hamouda</a> All Rights
-                Reserved
-              </div>
-              <div class="icons">
-                <a
-                  href="https://www.linkedin.com/in/hamouda-mohammed-81830370/"
-                  target="_blank">
-                  <div class="icon-1"><i class="fab fa-linkedin"></i></div>
-                </a>
-                <a href="https://web.facebook.com/anow47" target="_blank">
-                  <div class="icon-2"><i class="fab fa-facebook-f"></i></div>
-                </a>
-                <a href="https://twitter.com/@Hamouda_21" target="_blank">
-                  <div class="icon-3"><i class="fab fa-twitter"></i></div>
-                </a>
-                <a href="https://instagram.com/anow47" target="_blank">
-                  <div class="icon-4"><i class="fab fa-instagram"></i></div>
-                </a>
-                <a href="https://github.com/anow47" target="_blank">
-                  <div class="icon-5"><i class="fab fa-github"></i></div>
-                </a>
-              </div>
-            </div>
-          </footer>
-          <script src="js/main.js"></script>
-        </body>
-      </html>
+    <!--======Start Contact======-->
+    <contact id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="scroll-element js-scroll fade-in">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder=""></textarea>
+          <button type="submit" class="">send</button>
+        </form>
+      </div>
+    </contact>
+    <!--======Start Footer======-->
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright 2021 <a href="#">Hamouda</a> All Rights Reserved
+        </div>
+        <div class="icons">
+          <a
+            href="https://www.linkedin.com/in/hamouda-mohammed-81830370/"
+            target="_blank"
+          >
+            <div class="icon-1"><i class="fab fa-linkedin"></i></div>
+          </a>
+          <a href="https://web.facebook.com/anow47" target="_blank">
+            <div class="icon-2"><i class="fab fa-facebook-f"></i></div>
+          </a>
+          <a href="https://twitter.com/@Hamouda_21" target="_blank">
+            <div class="icon-3"><i class="fab fa-twitter"></i></div>
+          </a>
+          <a href="https://instagram.com/anow47" target="_blank">
+            <div class="icon-4"><i class="fab fa-instagram"></i></div>
+          </a>
+          <a href="https://github.com/anow47" target="_blank">
+            <div class="icon-5"><i class="fab fa-github"></i></div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
