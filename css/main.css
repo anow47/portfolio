@@ -402,7 +402,6 @@ work .projects_items {
   text-align: center;
   max-height: 500px;
   overflow: hidden;
-  border: 1px solid red;
 }
 work .projects_items > img {
   width: 300px;
@@ -450,7 +449,7 @@ work .projects_items .link a:hover {
     margin: 10px auto;
   }
   work .projects_items img{
-    
+    height: 300px;
   }
 }
 /*==========Start Bio==========*/
