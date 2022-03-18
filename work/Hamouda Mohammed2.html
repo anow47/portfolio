@@ -1,41 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="I'm Hamouda Mohammed, web front-end developer, HTML, CSS, JavaScript"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamouda Mohammed</title>
     <!-- Shows an icon on the top of the browser -->
-    <link
-      rel="shortcut icon"
-      type="images/x-icon"
-      href="images/portfolio.png"
-    />
+    <link rel="shortcut icon" type="images/x-icon" href="file:///E:/Projects/githup/portfolio/images/portfolio.png">
     <!-- Render All Elements Normally -->
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="Hamouda%20Mohammed2_files/normalize.css">
     <!-- Font Awesome Library -->
-    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="Hamouda%20Mohammed2_files/all.css">
     <!-- Main Template CSS File -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="Hamouda%20Mohammed2_files/main.css">
     <!-- Light-mode CSS File-->
-    <link rel="stylesheet" href="css/light-mode" />
+    <link rel="stylesheet" href="Hamouda%20Mohammed2_files/light-mode">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="Hamouda%20Mohammed2_files/css2.css" rel="stylesheet">
   </head>
   <body>
     <!---======start header======-->
     <header id="index.html">
       <div class="container">
-        <div class="logo"><a href="index.html">Hamouda</a></div>
+        <div class="logo"><a href="file:///E:/Projects/githup/portfolio/index.html">Hamouda</a></div>
         <i class="fas fa-bars toggle-menu" onclick="toggleMenu()"></i>
         <nav>
           <ul id="ul">
@@ -63,115 +52,67 @@
           <h3>WELCOME, MY NAME IS:</h3>
           <h1>Hamouda Mohammed</h1>
           <p>I'M A FRONT-END DEVELOPER</p>
-          <a
-            href="resume/Hamouda-Mohammed.pdf"
-            open="Hamouda-Mohammed"
-            target="_blank"
-            class="btn"
-            >Resume</a
-          >
+          <a href="file:///E:/Projects/githup/portfolio/resume/Hamouda-Mohammed.pdf" open="Hamouda-Mohammed" target="_blank" class="btn">Resume</a>
           <a href="#work" class="btn">My Work</a>
         </div>
       </div>
       <div class="right-box">
-        <img src="images/work-steps.png" alt="" />
+        <img src="Hamouda%20Mohammed2_files/work-steps.png" alt="">
       </div>
     </landing>
     <!--======Start Work======-->
     <work id="work">
       <h2>Work</h2>
       <div class="container">
-        <div class="projects scroll-element js-scroll fade-in">
+        <div class="projects scroll-element js-scroll fade-in scrolled">
           <div class="projects_items">
-            <img
-              src="work/Shopping.png"
-              id="snapShot1"
-              onclick="workInfo()"
-              alt="Techi"
-            />
-            <div class="link" id="info1">
-              <h3>Project name: <span>Techi</span></h3>
-              <p>Tools used: HTML, CSS</p>
-              <a
-                href="https://github.com/anow47/Techi"
-                target="_balnk"
-                >View on github
-              </a>
-            </div>
+            <img id="image1" src="Hamouda%20Mohammed2_files/Shopping.png" alt="Techi">
+            <a class="link" href="https://github.com/anow47/Techi" target="_balnk">View on github</a>
           </div>
           <div class="projects_items">
-            <img
-              src="work/portfolio.png"
-              id="snapShot2"
-              onclick="workInfo()"
-              alt="Portfolio"
-            />
-            <div class="link" id="info2">
-              <h3>Project name: <span>Portfolio</span></h3>
-              <p>Tools used: HTML, CSS, and JavaScript.</p>
-              <a 
-                href="https://github.com/anow47/portfolio"
-                target="_balnk"
-                >View on github</a
-              >
-            </div>
+            <img id="image2" src="Hamouda%20Mohammed2_files/portfolio.png" alt="Portfolio">
+            <a class="link" href="https://github.com/anow47/portfolio" target="_balnk">View on github</a>
           </div>
           <div class="projects_items">
-            <img
-              src="work/Bisa Tech.png"
-              id="snapShot3"
-              onclick="workInfo()"
-              alt="BisaTech"
-            />
-            <div class="link" id="info3">
-              <h3>Project name: <span>BisaTech</span></h3>
-              <p>Tools used: HTML, CSS.</p>
-              <a
-                
-                href="https://github.com/anow47/BisaTech"
-                target="_balnk"
-                >View on github</a
-              >
-            </div>
+            <img id="image3" src="Hamouda%20Mohammed2_files/Bisa%2520Tech.png" alt="BisaTech">
+            <a class="link" href="https://github.com/anow47/BisaTech" target="_balnk">View on github</a>
           </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
       </div>
     </work>
     <!--======Start Bio======-->
     <bio id="bio">
       <h2>About</h2>
-      <div class="container scroll-element js-scroll fade-in">
-        <svg
-          class="blob"
-          viewBox="0 0 479 467"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
+      <div class="container scroll-element js-scroll fade-in scrolled">
+        <svg class="blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
           <mask id="mask0" mask-type="alpha">
-            <path
-              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
+            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
               29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207
               44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931
               294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442
               466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835
-              299.81 -17.1617 219.583 9.19024 145.964Z"
-            />
+              299.81 -17.1617 219.583 9.19024 145.964Z"></path>
           </mask>
           <g mask="url(#mask0)">
-            <path
-              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
+            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
                 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207
                 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931
                 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442
                 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835
-                299.81 -17.1617 219.583 9.19024 145.964Z"
-            />
-            <image class="img" x="80" y="40" href="images/portfolio.png" />
+                299.81 -17.1617 219.583 9.19024 145.964Z"></path>
+            <image class="img" x="80" y="40" href="images/portfolio.png"></image>
           </g>
         </svg>
         <div class="skills_container">
           <div class="skills">
-            <h3>Skills & Tools</h3>
+            <h3>Skills &amp; Tools</h3>
             <div>
               <i class="fab fa-html5"></i>
               <p>HTML</p>
@@ -204,7 +145,7 @@
             </div>
             <div>
               <i class="fas fa-api"></i>
-              <p>JSON & APIs</p>
+              <p>JSON &amp; APIs</p>
             </div>
             <div>
               <i class="fab fa-python"></i>
@@ -232,9 +173,9 @@
     <contact id="contact">
       <div class="container">
         <h2>Contact</h2>
-        <form class="scroll-element js-scroll fade-in">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
+        <form class="scroll-element js-scroll fade-in scrolled">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
           <textarea placeholder=""></textarea>
           <button type="submit" class="">send</button>
         </form>
@@ -244,13 +185,10 @@
     <footer>
       <div class="container">
         <div class="copyright">
-          &copy; Copyright 2021 <a href="#">Hamouda</a> All Rights Reserved
+          © Copyright 2021 <a href="#">Hamouda</a> All Rights Reserved
         </div>
         <div class="icons">
-          <a
-            href="https://www.linkedin.com/in/hamouda-mohammed-81830370/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/hamouda-mohammed-81830370/" target="_blank">
             <div class="icon-1"><i class="fab fa-linkedin"></i></div>
           </a>
           <a href="https://web.facebook.com/anow47" target="_blank">
@@ -268,6 +206,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+    <script src="Hamouda%20Mohammed2_files/main.js"></script>
+  
+
+<iframe src="Hamouda%20Mohammed2_files/blank_003.htm" style="z-index: 2147483647; border: medium none; top: 0px; left: 0px; margin: 0px; clip: auto; display: block; position: absolute !important; background-color: transparent; height: 2739px; width: 1423px;" scrolling="no" id="firefox-screenshots-selection-iframe" role="dialog"></iframe><iframe src="Hamouda%20Mohammed2_files/blank_003.htm" style="z-index: 2147483647; border: medium none; top: 0px; left: 0px; margin: 0px; clip: auto; position: fixed !important; background-color: transparent; width: 100%; height: 100%; display: none;" scrolling="no" id="firefox-screenshots-preselection-iframe" role="dialog"></iframe><iframe src="Hamouda%20Mohammed2_files/blank_003.htm" style="z-index: 2147483647; border: medium none; top: 0px; left: 0px; margin: 0px; clip: auto; display: none; position: fixed !important; background-color: transparent; height: 100%; width: 100%;" scrolling="no" id="firefox-screenshots-preview-iframe" role="dialog"></iframe></body></html>
