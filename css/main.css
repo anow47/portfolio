@@ -456,11 +456,6 @@ work .projects_items .link a:hover {
 bio .container {
   display: flex;
 }
-@media (max-width: 768px) {
-  bio .container {
-    display: block;
-  }
-}
 bio .blob {
   position: relative;
   right: 0;
@@ -482,11 +477,7 @@ bio .skills {
   text-align: center;
   margin-top: 20px;
 }
-@media (max-width: 991px) {
-  bio .skills {
-    margin-top: 0px;
-  }
-}
+
 bio .skills h3 {
   color: var(--second-color);
   font-weight: normal;
@@ -499,18 +490,6 @@ bio .skills > div {
   display: inline-flex;
   background-color: #3b3737;
   margin: 10px;
-}
-@media (max-width: 991px) {
-  bio .skills > div {
-    padding: 3px;
-    margin: 3px;
-  }
-}
-@media (max-width: 768px) {
-  bio .skills > div {
-    padding: 5;
-    margin: 5px;
-  }
 }
 bio .skills i {
   font-size: 22px;
@@ -558,16 +537,6 @@ a {
   text-align: center;
   margin-top: 50px;
 }
-@media (max-width: 768px) {
-  .about_me {
-    margin-top: 50px;
-  }
-}
-@media (max-width: 991px) {
-  .about_me {
-    margin-top: 20px;
-  }
-}
 .about_me button {
   cursor: pointer;
   display: grid;
@@ -587,17 +556,48 @@ a {
   display: none;
   animation: drop-down 0.5s ease-out;
 }
-@media (max-width: 991px) {
-  .about_me p {
-    font-size: 14px;
-  }
-}
 @keyframes drop-down {
   from {
     transform: scale(0);
   }
   to {
     transform: scale(1);
+  }
+}
+@media screen and (max-width: 991px) {
+  .about_me p {
+    font-size: 14px;
+  }
+  .skills {
+    margin-top: 0px;
+  }
+  @media (max-width: 991px) {
+    .skills > div {
+      padding: 3px;
+      margin: 3px;
+    }
+}
+@media screen and (max-width: 768px) {
+  bio .container {
+    display: block;
+  }
+  bio .blob{
+    display: flex;
+    width: 450px;
+    margin: 0 auto;
+  }
+  bio .blob .img{
+    width: 400px;
+  }
+  bio .about_me {
+    margin-top: 50px;
+  }
+  bio .about_me {
+    margin-top: 20px;
+  }
+  bio .skills > div {
+    padding: 5;
+    margin: 5px;
   }
 }
 /*==========Start contact==========*/
