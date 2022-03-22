@@ -571,11 +571,10 @@ a {
   .skills {
     margin-top: 0px;
   }
-  @media (max-width: 991px) {
-    .skills > div {
-      padding: 3px;
-      margin: 3px;
-    }
+  .skills > div {
+    padding: 3px;
+    margin: 3px;
+  }
 }
 @media screen and (max-width: 768px) {
   bio .container {
