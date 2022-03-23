@@ -1,6 +1,7 @@
 /* Start Global Rules*/
 :root {
   --bg-color: #212121;
+  --second-bg-color: #3b3737;
   --main-color: #9c1d8b; /* old color #9c1d8b / new color #7439a7 */
   --second-color: #ebebeb;
   --section-padding: 100px;
@@ -413,7 +414,7 @@ work .projects_items > img {
   z-index: 1;
 }
 work .projects_items .link {
-  background-color: #3b3737;
+  background-color: var(--second-bg-color);
   padding-top: 30px;
   width: 100%;
   height: 200px;
@@ -425,8 +426,12 @@ h3 {
   color: var(--second-color);
   padding: 5px;
 }
-work .projects_items .link span{
+work .projects_items .link .project-link{
   color: var(--main-color);
+  background-color: var(--second-bg-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  top: 0;
 }
 work .projects_items .link a {
   background-color: var(--bg-color);
@@ -488,7 +493,7 @@ bio .skills > div {
   border-radius: 10px;
   padding: 5px;
   display: inline-flex;
-  background-color: #3b3737;
+  background-color: var(--second-bg-color);
   margin: 10px;
 }
 bio .skills i {
@@ -541,11 +546,11 @@ a {
   cursor: pointer;
   display: grid;
   margin: 10px auto;
-  background-color: #3b3737;
+  background-color: var(--second-bg-color);
   color: #df4d18;
   padding: 10px 10px;
   border-radius: 7px;
-  border: #3b3737;
+  border: var(--second-bg-color);
   font-size: 17px;
 }
 .about_me p {
