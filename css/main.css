@@ -403,6 +403,7 @@ work .projects .projects_items .link p,
 h3 {
   color: var(--second-color);
   padding: 5px;
+  font-weight: 400;
 }
 work .projects_items .link .project-link{
   color: var(--main-color);
@@ -433,6 +434,9 @@ work .projects_items .link a:hover {
   }
   work .projects_items img{
     height: 300px;
+  }
+  work .projects_items:hover{
+    transform: none;
   }
 }
 /*==========Start Bio==========*/
@@ -472,7 +476,7 @@ bio .skills > div {
   padding: 5px;
   display: inline-flex;
   background-color: var(--second-bg-color);
-  margin: 10px;
+  margin: 5px;
   transition: 0.3s;
 }
 bio .skills i {
@@ -571,7 +575,7 @@ a {
   }
   bio .blob{
     display: flex;
-    width: 450px;
+    width: 400px;
     margin: 0 auto;
   }
   bio .blob .img{
