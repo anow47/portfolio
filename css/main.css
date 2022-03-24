@@ -2,7 +2,8 @@
 :root {
   --bg-color: #212121;
   --second-bg-color: #3b3737;
-  --main-color: #9c1d8b; /* old color #9c1d8b / new color #7439a7 */
+  --thired-bg-color: #2b2929; 
+  --main-color: #9c1d8b; 
   --second-color: #ebebeb;
   --section-padding: 100px;
 }
@@ -32,6 +33,7 @@ body {
   border: 1px solid var(--main-color);
   border-radius: 10px;
   padding: 12px 20px;
+  margin-right: 5px;
   text-decoration: none;
   font-size: 16px;
   color: var(--second-color);
@@ -44,34 +46,17 @@ body {
   background-position: left bottom;
   color: var(--second-color);
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .btn {
-    width: fit-content;
-    border: 1px solid var(--main-color);
-    border-radius: 10px;
     padding: 9px 10px;
-    text-decoration: none;
-    font-size: 16px;
-    color: var(--second-color);
-    transition: 0.5s;
-    background: linear-gradient(to right, #212121 50%, #212121 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
+    font-size: 15px;
+    margin-right: 5px;
   }
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .btn {
-    width: fit-content;
-    border: 1px solid var(--main-color);
-    border-radius: 10px;
     padding: 9px 10px;
-    text-decoration: none;
-    font-size: 16px;
-    color: var(--second-color);
-    transition: 0.5s;
-    background: linear-gradient(to right, #212121 50%, #212121 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
+    margin-right: 5px;
   }
 }
 h2 {
@@ -205,7 +190,7 @@ svg {
 }
 svg path {
   stroke: none;
-  fill: #2b2929;
+  fill: var(--thired-bg-color);
 }
 .light-mode header .fa-lightbulb {
   color: #000;
@@ -219,7 +204,7 @@ svg path {
   }
   header .container::before {
     content: "";
-    background-color: #2b2929;
+    background-color: var(--thired-bg-color);
     width: 100%;
     height: 63px;
     position: fixed;
@@ -242,7 +227,7 @@ svg path {
   header nav ul {
     display: none;
     margin: 0;
-    background-color: #2b2929;
+    background-color: var(--thired-bg-color);
     position: fixed;
     left: 0;
     min-width: 200px;
@@ -261,8 +246,8 @@ svg path {
     margin: 50px;
   }
   header nav ul li a.btn {
-    background: #2b2929;
-    border: #2b2929;
+    background: var(--thired-bg-color);
+    border: var(--thired-bg-color);
   }
   .fa-moon {
     font-size: 20px;
@@ -284,10 +269,6 @@ svg path {
 }
 @media (max-width: 768px) {
   svg {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 62px 0;
   }
 }
