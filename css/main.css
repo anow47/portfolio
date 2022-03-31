@@ -292,6 +292,7 @@ landing .left-box {
 landing .left-box .text h1 {
   color: var(--second-color);
   font-size: 40px;
+  text-transform: uppercase;
 }
 landing .left-box .text h3 {
   color: var(--main-color);
@@ -300,6 +301,7 @@ landing .left-box .text h3 {
 landing .left-box .text p {
   color: var(--second-color);
   padding-bottom: 30px;
+  text-transform: uppercase;
 }
 
 landing .right-box {
@@ -694,7 +696,7 @@ footer .icons a {
   opacity: 1;
 }
 .scrolled.fade-in {
-  animation: fade-in 1.5s ease-in-out both;
+  animation: fade-in 0.8s ease-in-out both;
 }
 
 /*scroll animation*/
