@@ -485,17 +485,11 @@ a {
 .fa-git-alt {
   color: #df4d18;
 }
-.bio .fa-github {
+bio .fa-github {
   color: #fff;
 }
 .fa-react {
   color: #44c9d3;
-}
-.fa-digital-ocean {
-  color: #1552c5;
-}
-.fa-database {
-  color: #003a86;
 }
 .fa-python {
   color: #1f6dd3;
@@ -660,7 +654,6 @@ footer .icons {
 footer .icons a {
   padding: 0px 15px;
   font-size: 17px;
-  color: var(--second-color);
 }
 .icon-1:hover {
   color: #4267b2;
