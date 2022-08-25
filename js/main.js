@@ -9,10 +9,20 @@ function toggleMenu() {
   let showMenu = document.getElementById("ul");
   if (showMenu.style.display === "none") {
     showMenu.style.display = "block";
+
   } else {
     showMenu.style.display = "none";
   }
 }
+
+// change toggle icon using normal function
+const changeIcon = function(icon){
+  icon.classList.toggle('fa-times')
+}
+// change toggle icon using arrow function
+// changeIcon = (icon) => icon.classList.toggle('fa-times');
+
+
 
 //More about me
 window.onload = showMore();
