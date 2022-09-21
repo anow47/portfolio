@@ -1,0 +1,158 @@
+header .container {
+  padding-bottom: 70px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+header .container .logo a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--second-color);
+  font-weight: normal;
+  font-family: cursive;
+}
+header .toggle-menu {
+  color: var(--main-color);
+  font-size: 30px;
+  top: 35px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  padding: 50px 0px;
+}
+header nav ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+header nav ul li a {
+  padding: 15px !important;
+}
+header nav ul li a:hover {
+  color: var(--main-color);
+}
+header nav ul li a.btn {
+  width: fit-content;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  padding: 7px 8px;
+  font-size: 16px;
+  background: linear-gradient(to right, var(--main-color) 50%, #2b2929 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.fa-moon {
+  color: #df732b62;
+  position: absolute;
+  font-size: 20px;
+  top: 40%;
+  left: 30%;
+}
+.fa-star {
+  color: var(--second-color);
+  font-size: 3px;
+  position: absolute;
+  top: 50%;
+  right: 42%;
+}
+#star {
+  color: var(--second-color);
+  font-size: 3px;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+}
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+svg path {
+  stroke: none;
+  fill: var(--thired-bg-color);
+}
+
+/**** Header Responsive ****/
+@media screen and (max-width: 768px) {
+  header .container {
+    top: 40px;
+  }
+  header .container::before {
+    content: "";
+    background-color: var(--thired-bg-color);
+    width: 100%;
+    height: 63px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+  }
+  header .container .logo a {
+    display: none;
+  }
+  header .toggle-menu {
+    position: fixed;
+    left: 30px;
+  }
+  .fa-xmark {
+    color: #fff;
+  }
+  header nav ul {
+    display: none;
+    margin: 0;
+    background-color: var(--thired-bg-color);
+    position: fixed;
+    left: 0;
+    min-width: 200px;
+    top: 65px;
+    padding: 0;
+    animation: bounceInLeft 1s;
+  }
+  header nav ul li:not(:last-child) {
+    border-bottom: 2px solid var(--main-color);
+  }
+  header nav ul li {
+    padding: 40px;
+  }
+  header nav ul li a {
+    font-size: 18px;
+    margin: 50px;
+  }
+  header nav ul li a.btn {
+    background: var(--thired-bg-color);
+    border: var(--thired-bg-color);
+  }
+  .fa-moon {
+    font-size: 20px;
+    top: 20%;
+  }
+  .fa-star {
+    font-size: 3px;
+    top: 10%;
+  }
+  #star {
+    font-size: 3px;
+    top: 60%;
+  }
+}
+@media (min-width: 768px) {
+  header .toggle-menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  svg {
+    padding: 62px 0;
+  }
+}

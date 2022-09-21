@@ -1,3 +1,7 @@
+/* Import the other css files  */
+@import url("header.css");
+@import url("work.css");
+
 /* Start Global Rules*/
 :root {
   --bg-color: #212121;
@@ -96,185 +100,6 @@ h2 {
 }
 /* End Global Rules*/
 
-/*==========Start Hearder==========*/
-header .container {
-  padding-bottom: 70px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-}
-header .fa-lightbulb {
-  color: var(--second-color);
-  font-size: 20px;
-  cursor: pointer;
-  left: 18px;
-  position: relative;
-  transform: rotateZ(360deg);
-  transition: 0.7s;
-  display: none;
-}
-header .container .logo a {
-  text-decoration: none;
-  font-size: 20px;
-  color: var(--second-color);
-  font-weight: normal;
-  font-family: cursive;
-}
-header .toggle-menu {
-  color: var(--main-color);
-  font-size: 30px;
-  top: 35px;
-}
-header nav {
-  display: flex;
-  align-items: center;
-}
-header nav ul {
-  display: flex;
-  padding: 50px 0px;
-}
-header nav ul li {
-  list-style-type: none;
-  padding: 0px 10px;
-}
-header nav ul li a {
-  text-decoration: none;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: var(--second-color);
-}
-header nav ul li a {
-  padding: 15px !important;
-}
-header nav ul li a:hover {
-  color: var(--main-color);
-}
-header nav ul li a.btn {
-  width: fit-content;
-  border: 1px solid var(--main-color);
-  border-radius: 10px;
-  padding: 7px 8px;
-  font-size: 16px;
-  background: linear-gradient(to right, var(--main-color) 50%, #2b2929 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-}
-.fa-moon {
-  color: #df732b62;
-  position: absolute;
-  font-size: 20px;
-  top: 40%;
-  left: 30%;
-}
-.fa-star {
-  color: var(--second-color);
-  font-size: 3px;
-  position: absolute;
-  top: 50%;
-  right: 42%;
-}
-#star {
-  color: var(--second-color);
-  font-size: 3px;
-  position: absolute;
-  top: 80%;
-  left: 20%;
-}
-svg {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-svg path {
-  stroke: none;
-  fill: var(--thired-bg-color);
-}
-.light-mode header .fa-lightbulb {
-  color: #000;
-  transform: rotateZ(180deg);
-  transition: 0.7s;
-}
-/**** Header Responsive ****/
-@media screen and (max-width: 768px) {
-  header .container {
-    top: 40px;
-  }
-  header .container::before {
-    content: "";
-    background-color: var(--thired-bg-color);
-    width: 100%;
-    height: 63px;
-    position: fixed;
-    top: 0;
-    left: 0px;
-  }
-  header .fa-lightbulb {
-    left: 0px;
-    position: relative;
-    font-size: 20px;
-    bottom: 12px;
-  }
-  header .container .logo a {
-    display: none;
-  }
-  header .toggle-menu {
-    position: fixed;
-    left: 30px;
-  }
-  .fa-xmark {
-    color: #fff;
-  }
-  header nav ul {
-    display: none;
-    margin: 0;
-    background-color: var(--thired-bg-color);
-    position: fixed;
-    left: 0;
-    min-width: 200px;
-    top: 65px;
-    padding: 0;
-    animation: bounceInLeft 1s;
-  }
-  header nav ul li:not(:last-child) {
-    border-bottom: 2px solid var(--main-color);
-  }
-  header nav ul li {
-    padding: 40px;
-  }
-  header nav ul li a {
-    font-size: 18px;
-    margin: 50px;
-  }
-  header nav ul li a.btn {
-    background: var(--thired-bg-color);
-    border: var(--thired-bg-color);
-  }
-  .fa-moon {
-    font-size: 20px;
-    top: 20%;
-  }
-  .fa-star {
-    font-size: 3px;
-    top: 10%;
-  }
-  #star {
-    font-size: 3px;
-    top: 60%;
-  }
-}
-@media (min-width: 768px) {
-  header .toggle-menu {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  svg {
-    padding: 62px 0;
-  }
-}
 /*==========Start Landing==========*/
 landing {
   display: flex;
@@ -379,16 +204,23 @@ bio .skills h3 {
   padding-bottom: 20px;
   text-align: center;
 }
-bio .skills > div {
+bio .skills > div,
+.github {
   border-radius: 10px;
   padding: 5px;
   display: inline-flex;
+  align-items: center;
   background-color: var(--second-bg-color);
-  margin: 5px;
+  margin: 6px;
   transition: 0.3s;
+}
+.no-icon {
+  margin: 5px;
+  font-size: 13px;
 }
 bio .skills i {
   font-size: 22px;
+  padding-left: 5px;
 }
 bio .skills p,
 a {
@@ -527,9 +359,11 @@ contact form button {
   margin: 12px 0px 50px 0px;
   cursor: pointer;
   display: grid;
+  font-size: 1rem;
+  letter-spacing: 2px;
   background-color: #404040;
-  color: #d6c4c4;
-  padding: 8px 10px;
+  color: var(--second-color);
+  padding: 0.7rem 1rem;
   border-radius: 7px;
   border: #404040;
 }

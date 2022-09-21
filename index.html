@@ -21,9 +21,6 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Main Template CSS File -->
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/work.css" />
-    <!-- Light-mode CSS File-->
-    <link rel="stylesheet" href="css/light-mode" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,19 +34,18 @@
     <!---======start header======-->
     <header id="index.html">
       <div class="container">
-        <div class="logo"><a href="index.html">Hamouda</a></div>
+        <div class="logo"><a class="logo" href="index.html">Hamouda</a></div>
         <i
-          class="fa fa-bars toggle-menu"
+          class="fas fa-bars toggle-menu"
           onclick="toggleMenu(); changeIcon(this)"
         ></i>
         <nav>
-          <ul id="ul">
+          <ul>
             <li><a href="#index.html" class="btn">Home</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#bio">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <i class="fas fa-lightbulb" onclick="lightMode()"></i>
         </nav>
         <i class="fas fa-moon"></i>
         <i class="fas fa-star" id="star"></i>
@@ -75,7 +71,7 @@
             open="Hamouda-Mohammed"
             target="_blank"
             class="btn"
-            >Resume</a
+            >Download CV</a
           >
           <a href="#work" class="btn">My Work</a>
         </div>
@@ -193,23 +189,19 @@
               <i class="fab fa-git-alt"></i>
               <p>git</p>
             </div>
-            <div class="github">
+            <a class="github" href="https://github.com/anow47" target="_blank">
               <i class="fab fa-github"></i>
-              <p>
-                <a href="https://github.com/anow47" target="_blank">github</a>
-              </p>
-            </div>
+              <p>github</p>
+            </a>
             <div>
               <i class="fab fa-react"></i>
               <p>React js</p>
             </div>
             <div>
-              <i class="fab fa-unit-test"></i>
-              <p>JEST UNIT TEST</p>
+              <p class="no-icon">JEST UNIT TEST</p>
             </div>
             <div>
-              <i class="fas fa-api"></i>
-              <p>JSON & APIs</p>
+              <p class="no-icon">JSON & APIs</p>
             </div>
             <div>
               <i class="fab fa-python"></i>
@@ -240,7 +232,7 @@
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <textarea placeholder=""></textarea>
-          <button type="submit" class="">send</button>
+          <button type="submit" class="">Send Message</button>
         </form>
       </div>
     </contact>
@@ -273,6 +265,5 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
-    <script src="js/work.js"></script>
   </body>
 </html>

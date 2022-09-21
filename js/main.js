@@ -1,19 +1,14 @@
-//dark mode function
-function lightMode() {
-  let element = document.body;
-  element.classList.toggle("light-mode");
-}
 //Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
 window.onload = toggleMenu();
 function toggleMenu() {
-  let showMenu = document.getElementById("ul");
+  let showMenu = document.querySelector("ul");
   if (showMenu.style.display === "none") {
     showMenu.style.display = "block";
-
   } else {
     showMenu.style.display = "none";
   }
 }
+
 
 // change toggle icon using normal function
 const changeIcon = function(icon){
