@@ -1,26 +1,18 @@
 //Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
-// window.onload = toggleMenu();
 function toggleMenu() {
-  let showMenu = document.querySelector("ul");
+  let showMenu = document.getElementById("mobile-ul");
   if (showMenu.style.display === "none") {
     showMenu.style.display = "block";
   } else {
     showMenu.style.display = "none";
   }
 }
-
-
 // change toggle icon using normal function
 const changeIcon = function(icon){
   icon.classList.toggle('fa-times')
 }
-// change toggle icon using arrow function
-// changeIcon = (icon) => icon.classList.toggle('fa-times');
-
-
 
 //More about me
-window.onload = showMore();
 function showMore() {
   let showText = document.getElementById("text");
   if (showText.style.display === "none") {

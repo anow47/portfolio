@@ -13,36 +13,33 @@ header .container .logo a {
   font-weight: normal;
   font-family: cursive;
 }
-header .toggle-menu {
-  color: var(--main-color);
-  font-size: 30px;
-  top: 35px;
-}
-header nav {
+
+/************ Desktop nav bar  **********/
+.desktop {
   display: flex;
   align-items: center;
 }
-header nav ul {
+.desktop ul {
   display: flex;
   padding: 50px 0px;
 }
-header nav ul li {
+.desktop ul li {
   list-style-type: none;
   padding: 0px 10px;
 }
-header nav ul li a {
+.desktop ul li a {
   text-decoration: none;
   font-size: 15px;
   text-transform: uppercase;
   color: var(--second-color);
 }
-header nav ul li a {
+.desktop ul li a {
   padding: 15px !important;
 }
-header nav ul li a:hover {
+.desktop ul li a:hover {
   color: var(--main-color);
 }
-header nav ul li a.btn {
+.desktop ul li a.btn {
   width: fit-content;
   border: 1px solid var(--main-color);
   border-radius: 10px;
@@ -52,6 +49,39 @@ header nav ul li a.btn {
   background-size: 200% 100%;
   background-position: right bottom;
 }
+
+/********* Mobile nav bar  ********/
+.toggle-menu {
+  color: var(--main-color);
+  font-size: 30px;
+  top: 35px;
+}
+.mobile-nav ul {
+  display: none;
+  margin: 0;
+  background-color: var(--thired-bg-color);
+  position: fixed;
+  left: 0;
+  min-width: 200px;
+  top: 65px;
+  padding: 0;
+  animation: bounceInLeft 1s;
+}
+.mobile-nav ul li:not(:last-child) {
+  border-bottom: 2px solid var(--main-color);
+}
+.mobile-nav ul li {
+  padding: 40px;
+}
+.mobile-nav ul li a {
+  font-size: 18px;
+  margin: 50px;
+}
+.mobile-nav ul li a.btn {
+  background: var(--thired-bg-color);
+  border: var(--thired-bg-color);
+}
+/***** header stars / moon / svg  *****/
 .fa-moon {
   color: #df732b62;
   position: absolute;
@@ -105,34 +135,6 @@ svg path {
     position: fixed;
     left: 30px;
   }
-  .fa-xmark {
-    color: #fff;
-  }
-  header nav ul {
-    /* display: none; */
-    margin: 0;
-    background-color: var(--thired-bg-color);
-    position: fixed;
-    left: 0;
-    min-width: 200px;
-    top: 65px;
-    padding: 0;
-    animation: bounceInLeft 1s;
-  }
-  header nav ul li:not(:last-child) {
-    border-bottom: 2px solid var(--main-color);
-  }
-  header nav ul li {
-    padding: 40px;
-  }
-  header nav ul li a {
-    font-size: 18px;
-    margin: 50px;
-  }
-  header nav ul li a.btn {
-    background: var(--thired-bg-color);
-    border: var(--thired-bg-color);
-  }
   .fa-moon {
     font-size: 20px;
     top: 20%;
@@ -145,14 +147,15 @@ svg path {
     font-size: 3px;
     top: 60%;
   }
-}
-@media (min-width: 768px) {
-  header .toggle-menu {
+  svg {
+    padding: 62px 0;
+  }
+  .desktop ul{
     display: none;
   }
 }
-@media (max-width: 768px) {
-  svg {
-    padding: 62px 0;
+@media only screen and (min-width: 768px) {
+  header .toggle-menu {
+    display: none;
   }
 }

@@ -39,8 +39,15 @@
           class="fas fa-bars toggle-menu"
           onclick="toggleMenu(); changeIcon(this)"
         ></i>
-        <nav>
-          <ul>
+        <nav class="desktop">
+          <ul class="desktop-ul">
+            <li><a href="#index.html" class="btn">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#bio">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        <nav class="mobile-nav">
+          <ul id="mobile-ul" class="mobile-ul" style="display: none";>
             <li><a href="#index.html" class="btn">Home</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#bio">About</a></li>
@@ -214,7 +221,7 @@
           </div>
           <div class="about_me" id="about_me">
             <button onclick="showMore()">Read about me...</button>
-            <p id="text">
+            <p id="text" style="display: none;">
               Hello, I'm Hamouda , a self taught developer who's passionate
               about tech and web development in particular; I use different
               technologies and tools to accomplish the best results. My main

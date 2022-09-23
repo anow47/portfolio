@@ -280,7 +280,6 @@ bio .fa-github {
   margin: 10px auto;
   color: var(--second-color);
   line-height: 25px;
-  display: none;
   animation: drop-down 0.5s ease-out;
 }
 @keyframes drop-down {
