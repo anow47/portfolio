@@ -53,8 +53,8 @@ header .container .logo a {
 /********* Mobile nav bar  ********/
 .toggle-menu {
   color: var(--main-color);
-  font-size: 30px;
-  top: 35px;
+  font-size: 40px;
+  top: 28px;
 }
 .mobile-nav ul {
   display: none;
