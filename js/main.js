@@ -1,5 +1,5 @@
 //Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
-window.onload = toggleMenu();
+// window.onload = toggleMenu();
 function toggleMenu() {
   let showMenu = document.querySelector("ul");
   if (showMenu.style.display === "none") {

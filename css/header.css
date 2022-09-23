@@ -109,7 +109,7 @@ svg path {
     color: #fff;
   }
   header nav ul {
-    display: none;
+    /* display: none; */
     margin: 0;
     background-color: var(--thired-bg-color);
     position: fixed;
