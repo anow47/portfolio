@@ -19,6 +19,7 @@ function showMore() {
     showText.style.display = "block";
   } else {
     showText.style.display = "none";
+    element.style.transition = ("1s");
   }
 }
 

@@ -74,7 +74,7 @@
           <h1>Hamouda Mohammed</h1>
           <p>web front-end developer</p>
           <a
-            href="resume/Hamouda-Mohammed-Egypt.pdf"
+            href="resume/Hamouda-Mohammed.pdf"
             open="Hamouda-Mohammed"
             target="_blank"
             class="btn"
@@ -205,7 +205,7 @@
               <p>React js</p>
             </div>
             <div>
-              <p class="no-icon">JEST UNIT TEST</p>
+              <p class="no-icon">Web development</p>
             </div>
             <div>
               <p class="no-icon">JSON & APIs</p>
@@ -235,11 +235,11 @@
     <contact id="contact">
       <div class="container">
         <h2>Contact</h2>
-        <form class="scroll-element js-scroll fade-in">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder=""></textarea>
-          <button type="submit" class="">Send Message</button>
+        <form id="contact-form" class="scroll-element js-scroll fade-in">
+          <input type="text" placeholder="Name" name="user_name" required/>
+          <input type="email" placeholder="Email" name="user_email" required/>
+          <textarea placeholder="" name="message" required></textarea>
+          <button type="submit" class="" value="Send">Send Message</button>
         </form>
       </div>
     </contact>
@@ -247,7 +247,7 @@
     <footer>
       <div class="container">
         <div class="copyright">
-          &copy; Copyright 2022 <a href="#">Hamouda</a> All Rights Reserved
+          &copy; Copyright 2022 <a href="#">Hamouda</a> All Rights Reserved.
         </div>
         <div class="icons">
           <a

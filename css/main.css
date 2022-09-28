@@ -280,7 +280,7 @@ bio .fa-github {
   margin: 10px auto;
   color: var(--second-color);
   line-height: 25px;
-  animation: drop-down 0.5s ease-out;
+  animation: drop-down 0.5s ease-in-out;
 }
 @keyframes drop-down {
   from {
@@ -288,6 +288,14 @@ bio .fa-github {
   }
   to {
     transform: scale(1);
+  }
+}
+@keyframes fade-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
   }
 }
 @media screen and (max-width: 991px) {
