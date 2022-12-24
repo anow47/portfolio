@@ -183,7 +183,7 @@ bio .blob {
   width: 700px;
 }
 bio .blob .img {
-  width: 400px;
+  width: 620px;
   margin: 40px auto;
   max-width: 100%;
 }
@@ -254,6 +254,9 @@ bio .fa-github {
 .fa-bootstrap {
   color: #bf86ff;
 }
+.fa-vuejs {
+  color: #42b883;
+}
 /*======More About Me======*/
 .about_me {
   text-align: center;
@@ -318,9 +321,6 @@ bio .fa-github {
     display: flex;
     width: 400px;
     margin: 0 auto;
-  }
-  bio .blob .img {
-    width: 400px;
   }
   bio .about_me {
     margin-top: 50px;
@@ -468,81 +468,6 @@ footer .icons a {
   }
 }
 
-/*=======bounceInRight the toggle menu when clicked========*/
-@-webkit-keyframes bounceInLeft {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
-    transform: translate3d(-3000px, 0, 0) scaleX(3);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
-    transform: translate3d(25px, 0, 0) scaleX(1);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
-    transform: translate3d(-10px, 0, 0) scaleX(0.98);
-  }
-
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
-    transform: translate3d(5px, 0, 0) scaleX(0.995);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes bounceInLeft {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
-    transform: translate3d(-3000px, 0, 0) scaleX(3);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
-    transform: translate3d(25px, 0, 0) scaleX(1);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
-    transform: translate3d(-10px, 0, 0) scaleX(0.98);
-  }
-
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
-    transform: translate3d(5px, 0, 0) scaleX(0.995);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
 
 /*=======bounceInLeft the toggle menu when clicked========*/
 @keyframes bounceInRight {

@@ -21,11 +21,12 @@
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
-  transition: 0, 5s;
+  transition: 0.3s;
 }
 .porject_items:hover {
   border-color: var(--second-bg-color);
   background: transparent;
+  transition: 0.3s;
 }
 .porject_items h3 {
   margin: 1.2rem 0 2rem;
@@ -33,6 +34,11 @@
   color: #fff;
   font-size: 14px;
   font-weight: 100;
+}
+.porject_items h3 span{
+  font-size: 15px;
+  font-weight: 600;
+  color: #df4d18;
 }
 .porject_item-cta {
   display: flex;
