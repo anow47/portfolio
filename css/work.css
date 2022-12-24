@@ -4,7 +4,7 @@
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding-top: 100px;
+  padding-top: 80px;
   margin-bottom: 100px;
 }
 .porject_frame {
