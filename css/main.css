@@ -128,14 +128,14 @@ landing .left-box .text h3 {
 }
 landing .left-box .text p {
   color: var(--second-color);
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   text-transform: uppercase;
 }
+
 
 landing .right-box {
   width: 40%;
 }
-
 landing .right-box img {
   width: 300px;
   top: 53px;

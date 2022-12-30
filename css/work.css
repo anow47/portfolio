@@ -51,7 +51,19 @@
   background-size: 200% 100%;
   background-position: right bottom;
 }
-
+.live-demo{
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: var(--second-color);
+  transition: 0.3s;
+}
+.live-demo:hover{
+  background-color: var(--bg-color);
+  transition: 0.3s;
+}
 /* ======== Media Queries (Medium Devices ) ======= */
 @media screen and (max-width: 1024px) {
   .porjects {
