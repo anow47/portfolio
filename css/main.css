@@ -214,6 +214,10 @@ bio .skills > div,
   margin: 6px;
   transition: 0.3s;
 }
+.github {
+  border: 1px solid var(--main-color);
+  background-color: var(--bg-color);
+}
 .no-icon {
   margin: 5px;
   font-size: 13px;
@@ -368,14 +372,18 @@ contact form button {
   display: grid;
   font-size: 1rem;
   letter-spacing: 2px;
-  background-color: #404040;
   color: var(--second-color);
   padding: 0.7rem 1rem;
   border-radius: 7px;
   border: #404040;
+  transition: 0.3s;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  background-color: var(--bg-color);
 }
 contact form button:hover {
-  color: var(--main-color);
+  background-color: var(--main-color);
+  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
   contact .container {
