@@ -138,9 +138,8 @@ landing .right-box {
 }
 landing .right-box img {
   width: 350px;
-  top: -50px;
+  top: -30px;
   position: relative;
-  /* border: 1px solid var(--main-color); */
   border-radius: 8px;
 }
 @media screen and (max-width: 768px) {
