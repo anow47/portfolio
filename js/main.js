@@ -1,12 +1,17 @@
 //Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
+let mask = document.getElementById("mask")
+let showMenu = document.getElementById("mobile-ul");
 function toggleMenu() {
-  let showMenu = document.getElementById("mobile-ul");
+  mask.style.display === "none"? mask.style.display = "block" : mask.style.display = "none"
   showMenu.style.display === "none" ? showMenu.style.display = "block" : showMenu.style.display = "none";
 }
-
+function closeMenu() {
+  showMenu.style.display = "none"
+  mask.style.display = "none"
+}
 
 // change toggle icon with arrow function
-changeIcon = (icon)=> icon.classList.toggle('fa-times')
+// changeIcon = (icon)=> icon.classList.toggle('fa-times')
 
 
 //More about me

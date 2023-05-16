@@ -392,6 +392,7 @@ contact form button:hover {
   }
   contact form button {
     margin: 12px 0px 50px -31px;
+    letter-spacing: 0px;
   }
 }
 /*==========Start Footer==========*/
