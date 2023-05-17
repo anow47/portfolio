@@ -5,6 +5,11 @@ function toggleMenu() {
   mask.style.display === "none"? mask.style.display = "block" : mask.style.display = "none"
   showMenu.style.display === "none" ? showMenu.style.display = "block" : showMenu.style.display = "none";
 }
+function closeToggleMenu() {
+  showMenu.style.display = "none"
+  mask.style.display = "none"
+}
+
 function closeMenu() {
   showMenu.style.display = "none"
   mask.style.display = "none"
