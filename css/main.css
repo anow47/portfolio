@@ -133,10 +133,7 @@ landing .right-box {
   width: 40%;
 }
 landing .right-box img {
-  width: 350px;
-  top: -30px;
-  position: relative;
-  border-radius: 8px;
+  width: 300px;
 }
 @media screen and (max-width: 768px) {
   landing {
