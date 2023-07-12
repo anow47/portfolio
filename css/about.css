@@ -1,0 +1,159 @@
+.about{
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.img_box{
+  width: 40%;
+}
+.skills_box{
+  width: 60%;
+}
+.blob {
+  width: 90%;
+}
+.img {
+    margin: 40px auto;
+    width: 620px;
+    max-width: 100%;
+  }
+  .about .skills_container {
+    display: block;
+    width: 100%;
+  }
+  .about .skills {
+    display: block;
+    margin-top: 20px;
+  }
+  .about .skills h3 {
+    color: var(--second-color);
+    font-weight: normal;
+    padding-bottom: 20px;
+  }
+  .about .skills > div,
+  .github {
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    margin: 6px;
+    transition: 0.3s;
+    box-shadow: var(--box-shadow)
+  }
+  .github {
+    border: 1px solid var(--main-color);
+    background-color: var(--bg-color);
+  }
+  .no-icon {
+    margin: 5px;
+    font-size: 13px;
+  }
+  .about .skills i {
+    font-size: 22px;
+    padding-left: 5px;
+  }
+  .about .skills p,
+  a {
+    color: var(--second-color);
+    padding: 0px 10px;
+    transform: translateY(3px);
+    font-size: 13px;
+  }
+  .fa-html5 {
+    color: #ff7f50;
+  }
+  .fa-css3-alt {
+    color: #6495ed;
+  }
+  .fa-js-square {
+    color: #eeff00;
+  }
+  .fa-git-alt {
+    color: #df4d18;
+  }
+  .about .fa-github {
+    color: #fff;
+  }
+  .fa-react {
+    color: #44c9d3;
+  }
+  .fa-python {
+    color: #1f6dd3;
+  }
+  .fa-bootstrap {
+    color: #bf86ff;
+  }
+  .fa-vuejs {
+    color: #42b883;
+  }
+
+/*======More About Me======*/
+.about_me {
+    margin-top: 50px;
+  }
+  .about_me button {
+    display: grid;
+    margin: 10px auto;
+    background-color: var(--second-bg-color);
+    color: #df4d18;
+    padding: 10px 10px;
+    border-radius: 7px;
+    border: var(--second-bg-color);
+    font-size: 17px;
+    transition: 0.3s;
+    box-shadow: var(--box-shadow);
+  }
+  .about_me button:hover,
+  .github:hover {
+    transform: scale(1.1);
+  }
+  #text {
+    width: 80%;
+    margin: 10px auto;
+    color: var(--second-color);
+    line-height: 25px;
+    opacity: 0;
+    -webkit-transition: opacity 0.7s ease-in-out;
+    -moz-transition: opacity 0.7s ease-in-out;
+    -ms-transition: opacity 0.7s ease-in-out;
+    -o-transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.7 ease-in-out;
+  }
+  #text.fade {
+    opacity:1;
+  }
+  @media screen and (max-width: 1200px) {
+    .about_me p {
+      font-size: 14px;
+    }
+    .skills {
+      margin-top: 0px;
+    }
+    .skills > div {
+      padding: 3px;
+      margin: 3px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .about .box_container {
+      display: block;
+    }
+    .img_box,.skills_box{
+      width: 100%;
+    }
+    .about .blob {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .about .about_me {
+      margin-top: 50px;
+    }
+    .about .about_me {
+      margin-top: 20px;
+    }
+    .about .skills > div {
+      padding: 5;
+      margin: 5px;
+    }
+  }

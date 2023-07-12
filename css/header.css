@@ -1,13 +1,11 @@
-header .container {
-  padding-bottom: 70px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
+header .header_container {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: var(--third-bg-color);
+  padding: 30px 50px;
 }
 header .logo a {
-  text-decoration: none;
   font-size: 20px;
   font-weight: 600;
   color: var(--second-color);
@@ -19,30 +17,23 @@ header .logo a:hover{
   color: var(--main-color);
   transition: 0.3s;
 }
-
-/************ Desktop nav bar  **********/
+/************  Desktop nav bar  *************/
 .desktop {
-  display: flex;
-  align-items: center;
+  width: 100%;
 }
 .desktop ul {
   display: flex;
-  padding: 50px 0px;
 }
 .desktop ul li {
   list-style-type: none;
   padding: 0px 10px;
 }
 .desktop ul li a {
-  text-decoration: none;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--second-color);
   transition: 0.3s;
-}
-.desktop ul li a {
-  padding: 15px !important;
 }
 .desktop ul li a:hover {
   color: var(--main-color);
@@ -52,11 +43,14 @@ header .logo a:hover{
   width: fit-content;
   border: 1px solid var(--main-color);
   border-radius: 10px;
-  padding: 7px 8px;
   font-size: 16px;
   background: linear-gradient(to right, var(--main-color) 50%, #2b2929 50%);
   background-size: 200% 100%;
   background-position: right bottom;
+  box-shadow: var(--box-shadow);
+}
+a:is(:link, :active, :visited).active {
+  color: var(--main-color)
 }
 
 /********* Mobile nav bar  ********/
@@ -74,8 +68,7 @@ header .logo a:hover{
   top: 0;
   left: 0;
   z-index: 1;
-  animation: bounceInLeft 0.5s;
-
+  transition: 0.5s;
 }
 .fa-times{
   color: #fff;
@@ -87,100 +80,45 @@ header .logo a:hover{
 }
 .mobile-nav ul {
   display: none;
-  z-index: 2;
-  margin: 0;
-  background-color: var(--bg-color);
   position: fixed;
-  left: 0;
   min-height: 100%;
-  min-width: 250px;
-  top: 0px;
+  min-width: 300px;
+  background-color: var(--bg-color);
+  left: 0;
+  top: 0;
+  margin: 0;
   padding: 0;
+  z-index: 2;
   animation: bounceInLeft 0.5s;
 }
-.mobile-nav ul li:not(:last-child) {
-  border-bottom: 2px solid var(--main-color);
-}
 .mobile-nav ul li {
-  text-align: center;
   padding: 40px 0;
+  border-bottom: 2px solid var(--main-color);
 }
 .mobile-nav .links{
   font-size: 18px;
+}
+.mobile-nav ul li a{
+  font-weight: 600;
 }
 .mobile-nav ul li a.btn {
   background: var(--bg-color);
   border: var(--bg-color);
   font-size: 18px;
+  box-shadow: none;
 }
-/***** header stars / moon / svg  *****/
-.fa-moon {
-  color: #df732b62;
-  position: absolute;
+.logo-mobile a{
   font-size: 20px;
-  top: 40%;
-  left: 30%;
-}
-.fa-star {
-  color: var(--second-color);
-  font-size: 3px;
-  position: absolute;
-  top: 50%;
-  right: 42%;
-}
-#star {
-  color: var(--second-color);
-  font-size: 3px;
-  position: absolute;
-  top: 80%;
-  left: 20%;
-}
-svg {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-svg path {
-  stroke: none;
-  fill: var(--thired-bg-color);
 }
 
 /**** Header Responsive ****/
 @media screen and (max-width: 768px) {
-  header .container {
-    top: 40px;
-  }
-  header .container::before {
-    content: "";
-    background-color: var(--thired-bg-color);
-    width: 100%;
-    height: 63px;
-    position: fixed;
+  header .header_container {
     top: 0;
-    left: 0px;
+    padding: 15px 20px;
   }
-  header .container .logo a {
+  header .header_container .logo a {
     display: none;
-  }
-  header .toggle-menu {
-    position: fixed;
-    left: 30px;
-  }
-  .fa-moon {
-    font-size: 20px;
-    top: 20%;
-  }
-  .fa-star {
-    font-size: 3px;
-    top: 10%;
-  }
-  #star {
-    font-size: 3px;
-    top: 60%;
-  }
-  svg {
-    padding: 62px 0;
   }
   .desktop ul{
     display: none;
@@ -188,6 +126,9 @@ svg path {
 }
 @media only screen and (min-width: 768px) {
   header .toggle-menu {
+    display: none;
+  }
+  .logo-mobile{
     display: none;
   }
 }

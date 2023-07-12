@@ -20,7 +20,7 @@
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Main Template CSS File -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,19 +35,20 @@
   <body>
     <!---======start header======-->
     <header id="index.html">
-      <div class="container">
-        <div class="logo"><a href="index.html">Hamouda</a></div>
+      <div class="header_container flex align space">
         <i
-          class="fas fa-bars toggle-menu"
-          onclick="toggleMenu(); changeIcon(this)"
+        class="fas fa-bars toggle-menu"
+        onclick="toggleMenu(); changeIcon(this)"
         ></i>
-        <nav class="desktop">
+        <nav class="desktop flex align space">
+          <div class="logo"><a href="#index.html">Hamouda</a></div>
           <ul class="desktop-ul">
             <li><a href="#index.html" class="btn">Home</a></li>
             <li><a href="#work">Work</a></li>
-            <li><a href="#bio">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+        </nav>
         <div id="mask" class="mask" style="display: none" onclick="closeToggleMenu()">
           <i class="fa fa-times"></i>
         </div>
@@ -55,48 +56,55 @@
           <ul id="mobile-ul" class="mobile-ul" style="display: none">
             <li><a href="#index.html" class="btn links" onclick="closeMenu()">Home</a></li>
             <li><a href="#work" class="links" onclick="closeMenu()">Work</a></li>
-            <li><a href="#bio" class="links" onclick="closeMenu()">About</a></li>
+            <li><a href="#about" class="links" onclick="closeMenu()">About</a></li>
             <li><a href="#contact" class="links" onclick="closeMenu()">Contact</a></li>
           </ul>
+          <div class="logo-mobile" id="logo-mobile"><a href="#index.html">Hamouda</a></div>
         </nav>
+      </div>
+    </header>
+    <div class="astra_container">
+      <div class="astra">
         <i class="fas fa-moon"></i>
         <i class="fas fa-star" id="star"></i>
         <i class="fas fa-star"></i>
       </div>
-    </header>
-    <div class="wave">
-      <svg viewBox="0 0 450 130" preserveAspectRatio="xMinYMin meet">
+      <div class="wave">
+      <svg class="sunset" viewBox="0 0 450 130" preserveAspectRatio="xMinYMin meet">
         <path d="M0,100 C150,200 350,0 500,120 L500,00 L0,0 Z"></path>
       </svg>
+      </div>
     </div>
     <!--======Start Landing======-->
-    <landing>
-      <div class="left-box">
-        <div class="text">
-          <i class="fa-solid fa-xmark"></i>
-
-          <h3>WELCOME, MY NAME IS:</h3>
-          <h1>Hamouda Mohammed</h1>
-          <p>web front-end developer</p>
-          <a
-            href="resume/Hamouda-Mohammed.pdf"
-            open="Hamouda-Mohammed"
-            target="_blank"
-            class="btn"
-            >Download CV</a
-          >
-          <a href="#work" class="live-demo">My Work</a>
+    <section class="landing">
+      <div class="container flex">
+        <div class="left-box">
+          <div class="text">
+            <i class="fa-solid fa-xmark"></i>
+  
+            <h3>WELCOME, MY NAME IS:</h3>
+            <h1 class="name-title">Hamouda Mohammed</h1>
+            <p>web front-end developer</p>
+            <a
+              href="resume/Hamouda-Mohammed.pdf"
+              open="Hamouda-Mohammed"
+              target="_blank"
+              class="btn"
+              >Download CV</a
+            >
+            <a href="#work" class="live-demo">My Work</a>
+          </div>
+        </div>
+        <div class="right-box">
+          <img src="images/work-steps.png" alt="" />
         </div>
       </div>
-      <div class="right-box">
-        <img src="images/work-steps.png" alt="" />
-      </div>
-    </landing>
+    </section>
     <!--======Start Work======-->
-    <work id="work">
-      <h2>Work</h2>
+    <section class="work" id="work">
+      <h2 class="section-title">Work</h2>
       <div class="container">
-        <div class="porjects scroll-element js-scroll fade-in">
+        <div class="porjects flex cnt scroll-element js-scroll fade-in">
           <article class="porject_items">
             <div class="porject_frame">
               <img src="images/work/E-store.png" alt="Shopping Store" />
@@ -125,7 +133,7 @@
                 >github</a
               >
               <a
-                href="https://hamoudadev.com/"
+                href="#"
                 class="live-demo"
                 target="_blank"
                 >Live Site</a
@@ -134,17 +142,17 @@
           </article>
           <article class="porject_items">
             <div class="porject_frame">
-              <img src="images/work/Bisa Tech.png" alt="portfolio" />
+              <img src="images/work/Summary.jpg" alt="Summary" />
             </div>
-            <h3><span>BisaTech: </span> HTML, CSS.</h3>
+            <h3><span>Summary Result: </span> HTML, CSS.</h3>
             <div class="porject_item-cta">
               <a
-                href="https://github.com/anow47/BisaTech"
+                href="https://github.com/anow47/Summary-result"
                 class="btn"
                 target="_blank"
                 >github</a
               >
-              <a href="#" class="live-demo" target="_blank">Live Demo</a>
+              <a href="https://anow47.github.io/Summary-result/" class="live-demo" target="_blank">Live Demo</a>
             </div>
           </article>
           <article class="porject_items">
@@ -162,42 +170,59 @@
               <a href="https://agari2030.com/" class="live-demo" target="_blank">Live Site</a>
             </div>
           </article>
+          <article class="porject_items">
+            <div class="porject_frame">
+              <img src="images/work/sneakers.jpg" alt="portfolio" />
+            </div>
+            <h3><span>Sneakers: </span>React.js, e-commerce.</h3>
+            <div class="porject_item-cta">
+              <a
+                href="#"
+                class="btn"
+                target="_blank"
+                >github</a
+              >
+              <a href="#" class="live-demo" target="_blank">Live Demo</a>
+            </div>
+          </article>
         </div>
       </div>
-    </work>
+    </section>
     <!--======Start Bio======-->
-    <bio id="bio">
-      <h2>About</h2>
-      <div class="container scroll-element js-scroll fade-in">
-        <svg
-          class="blob"
-          viewBox="0 0 479 467"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <mask id="mask0" mask-type="alpha">
-            <path
-              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
-              29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207
-              44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931
-              294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442
-              466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835
-              299.81 -17.1617 219.583 9.19024 145.964Z"
-            >
-          </mask>
-          <g mask="url(#mask0)">
-            <path
-              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
+    <section class="about" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="box_container flex scroll-element js-scroll fade-in">
+        <div class="img_box flex cnt align">
+          <svg
+            class="blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
                 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207
                 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931
                 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442
                 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835
                 299.81 -17.1617 219.583 9.19024 145.964Z"
-            />
-            <image class="img" x="0" y="0" href="images/Linkedin.jpg" />
-          </g>
-        </svg>
-        <div class="skills_container">
+              >
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111
+                  29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207
+                  44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931
+                  294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442
+                  466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835
+                  299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image class="img" x="0" y="0" href="images/Linkedin.jpg" />
+            </g>
+          </svg>
+        </div>
+        <div class="skills_box">
           <div class="skills">
             <h3>Skills & Tools</h3>
             <div>
@@ -246,19 +271,25 @@
           <div class="about_me" id="about_me">
             <button onclick="showMore()">Read about me <i class="fas fa-arrow-down"></i></button>
             <p id="text">
-              Hello, I'm Hamouda,<br>
-              a web front-end developer. I aspire to bring value to the tech industry with my technical skill-set.
-              To accomplish that, I focus on both hard and soft skills.
-	            Along the way, these tools  Have helped. HTML, CSS, JavaScript, react.js, and Vue.js.
+              Hello,<br>
+              I'm a dedicated web front-end developer with a mission to make a significant impact in the tech industry. 
+              With a strong focus on both hard and soft skills, I strive to deliver exceptional value in every project I undertake. 
+              My technical skillset includes expertise in HTML, CSS, and JavaScript, as well as proficiency in popular frameworks like React.js and Vue.js. 
+              These tools have been instrumental in shaping my career path and enabling me to create engaging and dynamic web applications. 
+              I am driven by a passion for continuous learning and innovation, constantly seeking new ways to push the boundaries of front-end development.
             </p>
           </div>
         </div>
       </div>
-    </bio>
+    </section>
     <!--======Start Contact======-->
-    <contact id="contact">
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="engage">
+        <h4>You got something in mind!</h4>
+        <p>Let's talk then, kindley leave me a message or DM me on my social acoounts down bellow.</p>
+      </div>
       <div class="container">
-        <h2>Contact</h2>
         <form id="contact-form" class="scroll-element js-scroll fade-in">
           <input type="text" placeholder="Name" name="user_name" required/>
           <input type="email" placeholder="Email" name="user_email" required/>
@@ -266,10 +297,10 @@
           <button type="submit" class="" value="Send">Send Message</button>
         </form>
       </div>
-    </contact>
+    </section>
     <!--======Start Footer======-->
     <footer>
-      <div class="container">
+      <div class="container flex space align">
         <div class="copyright">
           &copy; Copyright 2023 <a href="#">Hamouda</a> All Rights Reserved.
         </div>

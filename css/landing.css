@@ -1,0 +1,97 @@
+
+  .landing .container {
+    padding-bottom: 80px;
+  }
+  .landing .left-box {
+    width: 60%;
+  }
+  .landing .name-title {
+    color: var(--second-color);
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  .landing .left-box .text h3 {
+    color: var(--main-color);
+    font-size: 17px;
+  }
+  .landing .left-box .text p {
+    color: var(--second-color);
+    padding-bottom: 70px;
+    text-transform: uppercase;
+  }
+  .landing .right-box {
+    width: 40%;
+  }
+  .landing .right-box img {
+    width: 300px;
+  }
+  @media screen and (max-width: 991px){
+    .landing .name-title{
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .landing .container{
+      display: block;
+    }
+    .landing .left-box,.landing .right-box {
+      width: 100%;
+    }
+    .landing .left-box .text h3 {
+      font-size: 15px;
+    }
+    .landing .name-title {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+    .landing .left-box .text p {
+      font-size: 15px;
+      padding-bottom: 50px;
+    }
+    .landing .left-box .btn {
+      padding: 12px 10px;
+    }
+    .landing .right-box {
+      margin: 50px auto;
+    }
+  }
+  /***** header stars / moon / svg  *****/
+.astra_container{
+    padding-top: 60px;
+  }
+  .astra{
+    height: 0;
+    z-index: 1;
+    background-color: var(--third-bg-color);
+  }
+  .astra .fa-moon {
+    color: #df732b62;
+    position: absolute;
+    font-size: 20px;
+    top: 20%;
+    left: 30%;
+  }
+  .astra .fa-star {
+    color: var(--second-color);
+    font-size: 3px;
+    position: absolute;
+    top: 20%;
+    right: 42%;
+  }
+  .astra #star {
+    color: var(--second-color);
+    font-size: 3px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+  .wave {
+    height: 200px;
+  }
+  .sunset {
+    display: inline-block;
+  }
+  svg path {
+    stroke: none;
+    fill: var(--third-bg-color);
+  }

@@ -1,0 +1,208 @@
+/* Import the other css files  */
+@import url("header.css");
+@import url("landing.css");
+@import url("work.css");
+@import url("about.css");
+@import url("contact.css");
+@import url("footer.css");
+
+/* Start Global Rules*/
+:root {
+  --bg-color: #212121;
+  --second-bg-color: #3b3737;
+  --third-bg-color: #2b2929;
+  --main-color: #9c1d8b;
+  --second-color: #ebebeb;
+  --section-padding: 100px;
+  --box-shadow: 0px 0px 5px hsla(0, 0%, 100%, 0.3);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+}
+a{
+  text-decoration: none;
+}
+.about_me button,
+.contact form button {
+  cursor: pointer
+}
+.about_me,
+.about .skills,
+.landing .left-box,
+.mobile-nav ul li,
+.about .skills h3,
+.landing .right-box,
+.porject_items h3,
+.engage
+{
+  text-align: center;
+}
+/***  Global css classes  ***/
+.flex{
+  display: flex;
+}
+.cnt{
+  justify-content: center;
+}
+.space{
+  justify-content: space-between;
+}
+.align{
+  align-items: center;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  width: fit-content;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-right: 5px;
+  font-size: 16px;
+  color: var(--second-color);
+  transition: 0.5s;
+  background: linear-gradient(to right, var(--main-color) 50%, #212121 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  box-shadow: var(--box-shadow);
+}
+.btn:hover {
+  background-position: left bottom;
+  color: var(--second-color);
+}
+.live-demo{
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: var(--second-color);
+  transition: 0.3s;
+  box-shadow: var(--box-shadow);
+}
+.live-demo:hover{
+  background-color: var(--bg-color);
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .btn, .live-demo {
+    padding: 9px 10px;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn, .live-demo {
+    padding: 9px 10px;
+    margin-right: 5px;
+  }
+}
+.section-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--second-color);
+  padding-bottom: 50px;
+}
+/* Small devices */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+/* Medium devices */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Larg devices */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Extra Large devices */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules*/
+
+
+/*==========Styling scrollable elements==========*/
+.js-scroll {
+  opacity: 0;
+  /* transition: opacity 500ms; */
+}
+.js-scroll.scrolled {
+  opacity: 1;
+}
+.scrolled.fade-in {
+  animation: fade-in 0.8s ease-in-out both;
+}
+
+/*scroll animation*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/*=======bounceInLeft the toggle menu when clicked========*/
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}
