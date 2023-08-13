@@ -2,6 +2,8 @@
 let mask = document.getElementById("mask")
 let showMenu = document.getElementById("mobile-ul");
 let logo = document.getElementById("logo-mobile");
+let showText = document.getElementById("text");
+
 function toggleMenu() {
   mask.style.display === "none"? mask.style.display = "block" : mask.style.display = "none"
   showMenu.style.display === "none" ? showMenu.style.display = "block" : showMenu.style.display = "none";
@@ -12,10 +14,13 @@ function closeToggleMenu() {
   mask.style.display = "none"
   logo.style.display = "block"
 }
-
 function closeMenu() {
   showMenu.style.display = "none"
   mask.style.display = "none"
+}
+// More about me
+function showMore() {
+  showText.classList.toggle('fade')
 }
 
 // add active class to nav links
@@ -30,15 +35,6 @@ navLinks.forEach((link) => {
     this.classList.add('active');
   });
 });
-
-// change toggle icon with arrow function
-// changeIcon = (icon)=> icon.classList.toggle('fa-times')
-
-//More about me
-let showText = document.getElementById("text");
-function showMore() {
-  showText.classList.toggle('fade')
-}
 
 
 //Animation on scroll element fade-in
