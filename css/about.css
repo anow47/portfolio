@@ -11,6 +11,7 @@
 }
 .blob {
   width: 90%;
+  margin: 1rem 0;
 }
 .img {
     margin: 40px auto;
@@ -83,13 +84,10 @@
   .fa-bootstrap {
     color: #bf86ff;
   }
-  .fa-vuejs {
-    color: #42b883;
-  }
 
 /*======More About Me======*/
 .about_me {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .about_me button {
     display: grid;
@@ -108,7 +106,7 @@
     transform: scale(1.1);
   }
   #text {
-    width: 80%;
+    width: 100%;
     margin: 10px auto;
     padding-bottom: 50px;
     color: var(--second-color);
@@ -137,13 +135,19 @@
       margin: 3px;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px){
     .about .box_container {
       display: block;
     }
     .img_box,.skills_box{
       width: 100%;
     }
+    .about .blob {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 768px) {
     .about .blob {
       width: 80%;
       margin: 0 auto;
@@ -157,8 +161,5 @@
     .about .skills > div {
       padding: 5;
       margin: 5px;
-    }
-    #text {
-      /* height: 0; */
     }
   }
