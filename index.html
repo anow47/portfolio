@@ -2,21 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="I'm Hamouda Mohammed, web front-end developer, HTML, CSS, JavaScript"
-    />
+    <meta name="description" content="I'm Hamouda Mohammed, web front-end developer, HTML, CSS, JavaScript | React"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hamouda Mohammed</title>
     <!-- Shows an icon on the top of the browser -->
-    <link
-      rel="shortcut icon"
-      type="images/x-icon"
-      href="images/portfolio.png"
-    />
+    <link rel="shortcut icon" type="images/x-icon" href="images/portfolio.png"/>
     <!-- Render All Elements Normally -->
-    <link rel="stylesheet" href="css/normalize.css" />
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Main Template CSS File -->
@@ -24,22 +15,16 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap" rel="stylesheet"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  </head>
-
+    <title>Hamouda Mohammed</title>
+    </head>
+    
   <body>
     <!---======start header======-->
     <header id="index.html">
       <div class="header_container flex align space">
-        <i
-        class="fas fa-bars toggle-menu"
-        onclick="toggleMenu(); changeIcon(this)"
-        ></i>
+        <i class="fas fa-bars toggle-menu" onclick="toggleMenu()"></i>
         <nav class="desktop flex align space">
           <div class="logo"><a href="#index.html">Hamouda</a></div>
           <ul class="desktop-ul">
@@ -54,10 +39,10 @@
         </div>
         <nav class="mobile-nav">
           <ul id="mobile-ul" class="mobile-ul" style="display: none">
-            <li><a href="#index.html" class="btn links" onclick="closeMenu()">Home</a></li>
-            <li><a href="#work" class="links" onclick="closeMenu()">Work</a></li>
-            <li><a href="#about" class="links" onclick="closeMenu()">About</a></li>
-            <li><a href="#contact" class="links" onclick="closeMenu()">Contact</a></li>
+            <li><a href="#index.html" class="btn links">Home</a></li>
+            <li><a href="#work" class="links">Work</a></li>
+            <li><a href="#about" class="links">About</a></li>
+            <li><a href="#contact" class="links">Contact</a></li>
           </ul>
           <div class="logo-mobile" id="logo-mobile"><a href="#index.html">Hamouda</a></div>
         </nav>
@@ -81,9 +66,8 @@
         <div class="left-box">
           <div class="text">
             <i class="fa-solid fa-xmark"></i>
-  
-            <h3>WELCOME, MY NAME IS:</h3>
-            <h1 class="name-title">Hamouda Mohammed</h1>
+            <h1>WELCOME, MY NAME IS:</h1>
+            <h2 class="name-title">Hamouda Mohammed</h2>
             <p>web front-end developer</p>
             <a
               href="resume/Hamouda-Mohammed.pdf"
@@ -96,101 +80,21 @@
           </div>
         </div>
         <div class="right-box">
-          <img src="images/work-steps.png" alt="" />
+          <img src="images/work-steps.webp" alt="" />
         </div>
       </div>
     </section>
     <!--======Start Work======-->
     <section class="work" id="work">
-      <h2 class="section-title">Work & Projects</h2>
+      <h1 class="section-title">Work & Projects</h1>
       <div class="container">
         <div class="porjects flex cnt scroll-element js-scroll fade-in">
-          <article class="porject_items">
-            <div class="porject_frame">
-              <img src="images/work/E-store.png" alt="Shopping Store" />
-            </div>
-            <h3><span>E-store: </span>Vue CLI eCommerce store</h3>
-            <div class="porject_item-cta">
-              <a
-                href="https://github.com/anow47/my-store"
-                class="btn"
-                target="_blank"
-                >github</a
-              >
-              <a href="https://anow47.github.io/my-store/" class="live-demo" target="_blank">Live Demo</a>
-            </div>
-          </article>
-          <article class="porject_items">
-            <div class="porject_frame">
-              <img src="images/work/portfolio.png" alt="portfolio" />
-            </div>
-            <h3><span>Portfolio: </span> HTML, CSS, and JavaScript.</h3>
-            <div class="porject_item-cta">
-              <a
-                href="https://github.com/anow47/portfolio"
-                class="btn"
-                target="_blank"
-                >github</a
-              >
-              <a
-                href="#"
-                class="live-demo"
-                target="_blank"
-                >Live Site</a
-              >
-            </div>
-          </article>
-          <article class="porject_items">
-            <div class="porject_frame">
-              <img src="images/work/furniture.jpg" alt="Summary" />
-            </div>
-            <h3><span>Home-furniture: </span> HTML, SCSS, JavaScript.</h3>
-            <div class="porject_item-cta">
-              <a
-                href="https://github.com/anow47/home-furniture"
-                class="btn"
-                target="_blank"
-                >github</a
-              >
-              <a href="https://anow47.github.io/home-furniture/" class="live-demo" target="_blank">Live Demo</a>
-            </div>
-          </article>
-          <article class="porject_items">
-            <div class="porject_frame">
-              <img src="images/work/agari2030.com.png" alt="portfolio" />
-            </div>
-            <h3><span>Alsnap Real Estate: </span>WordPress, HTML, CSS.</h3>
-            <div class="porject_item-cta">
-              <a
-                href="#"
-                class="btn"
-                target="_blank"
-                >github</a
-              >
-              <a href="https://agari2030.com/" class="live-demo" target="_blank">Live Site</a>
-            </div>
-          </article>
-          <article class="porject_items">
-            <div class="porject_frame">
-              <img src="images/work/sneakers.jpg" alt="portfolio" />
-            </div>
-            <h3><span>Sneakers: </span>React, e-commerce.</h3>
-            <div class="porject_item-cta">
-              <a
-                href="https://github.com/anow47/sneakers"
-                class="btn"
-                target="_blank"
-                >github</a
-              >
-              <a href="https://anow47.github.io/sneakers/" class="live-demo" target="_blank">Live Demo</a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
     <!--======Start Bio======-->
     <section class="about" id="about">
-      <h2 class="section-title">About</h2>
+      <h1 class="section-title">About</h1>
       <div class="box_container flex scroll-element js-scroll fade-in">
         <div class="img_box flex cnt align">
           <svg
@@ -218,13 +122,13 @@
                   466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835
                   299.81 -17.1617 219.583 9.19024 145.964Z"
               />
-              <image class="img" x="0" y="0" href="images/Linkedin.jpg" />
+              <image class="img" x="0" y="0" href="./images/Linkedin.webp" />
             </g>
           </svg>
         </div>
         <div class="skills_box">
           <div class="skills">
-            <h3>Skills & Tools</h3>
+            <h2 class="skills-title">Skills & Tools</h2>
             <div>
               <i class="fab fa-html5"></i>
               <p>HTML</p>
@@ -264,8 +168,8 @@
               <p>Bootstrap</p>
             </div>
           </div>
-          <div class="about_me" id="about_me">
-            <button onclick="showMore()">Read about me <i class="fas fa-arrow-down"></i></button>
+          <div class="about_me">
+            <button>Read about me <i class="fas fa-arrow-down"></i></button>
             <p id="text">
               Hello,<br>
               I'm a dedicated web front-end developer with a mission to make a significant impact in the tech industry. 
@@ -279,17 +183,17 @@
       </div>
     </section>
     <!--======Start Contact======-->
-    <section class="contact" id="contact">
-      <h2 class="section-title">Contact</h2>
+    <section class="contact scroll-element js-scroll fade-in" id="contact">
+      <h1 class="section-title">Contact</h1>
       <div class="container">
         <div class="engage">
-          <h4>You got something in mind!</h4>
-          <p>Let's talk then, kindley leave me a message or DM me on my social acoounts down bellow.</p>
+          <p class="engage-header">You got something in mind!</p>
+          <p class="engage-message">Let's talk then, kindley leave me a message or DM me on my social acoounts down bellow.</p>
         </div>
-        <form id="contact-form" class="scroll-element js-scroll fade-in">
-          <input type="text" placeholder="Name" name="user_name" required/>
-          <input type="email" placeholder="Email" name="user_email" required/>
-          <textarea placeholder="" name="message" required></textarea>
+        <form id="contact-form">
+          <input type="text" placeholder="Name" name="user_name" aria-label="Your Name" required/>
+          <input type="email" placeholder="Email" name="user_email" aria-label="Your email" required/>
+          <textarea placeholder="" name="message" aria-label="Your message" required></textarea>
           <button type="submit" class="" value="Send">Send Message</button>
         </form>
       </div>
@@ -318,5 +222,6 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/email.js"></script>
+    <script src="js/work.js"></script>
   </body>
 </html>

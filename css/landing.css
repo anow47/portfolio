@@ -10,7 +10,7 @@
     font-size: 40px;
     text-transform: uppercase;
   }
-  .landing .left-box .text h3 {
+  .landing .left-box .text h1 {
     color: var(--main-color);
     font-size: 17px;
   }
@@ -24,6 +24,7 @@
   }
   .landing .right-box img {
     width: 300px;
+    height: 300px;
   }
   @media screen and (max-width: 991px){
     .landing .name-title{
@@ -37,7 +38,7 @@
     .landing .left-box,.landing .right-box {
       width: 100%;
     }
-    .landing .left-box .text h3 {
+    .landing .left-box .text h1 {
       font-size: 15px;
     }
     .landing .name-title {

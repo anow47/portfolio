@@ -11,7 +11,8 @@
   overflow: hidden;
 }
 .porject_frame img {
-  width: 100%;
+  width: 300px;
+  height: 250px;
 }
 .porject_items {
   background: var(--second-bg-color);
@@ -27,13 +28,13 @@
   background: transparent;
   transition: 0.3s;
 }
-.porject_items h3 {
+.porject_items .project-title {
   margin: 1.2rem 0 2rem;
   color: #fff;
   font-size: 14px;
   font-weight: 100;
 }
-.porject_items h3 span{
+.porject_items .project-title span{
   font-size: 15px;
   font-weight: 600;
   color: #df4d18;

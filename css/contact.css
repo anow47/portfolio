@@ -4,15 +4,14 @@
   }
   .engage{
     padding-bottom: 70px;
-    font-family: 'Dancing Script', cursive;
   }
-  .engage h4{
+  .engage .engage-header{
     color: var(--main-color);
     padding-bottom: 10px;
     font-size: 23px;
     text-shadow: 0 0 2px var(--main-color);
   }
-  .engage p {
+  .engage .engage-message {
     color: #fff;
     font-size: 20px;
     text-shadow: 0 0 4px #FFf;

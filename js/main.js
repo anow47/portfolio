@@ -2,7 +2,6 @@
 let mask = document.getElementById("mask")
 let showMenu = document.getElementById("mobile-ul");
 let logo = document.getElementById("logo-mobile");
-let showText = document.getElementById("text");
 
 function toggleMenu() {
   mask.style.display === "none"? mask.style.display = "block" : mask.style.display = "none"
@@ -13,14 +12,6 @@ function closeToggleMenu() {
   showMenu.style.display = "none"
   mask.style.display = "none"
   logo.style.display = "block"
-}
-function closeMenu() {
-  showMenu.style.display = "none"
-  mask.style.display = "none"
-}
-// More about me
-function showMore() {
-  showText.classList.toggle('fade')
 }
 
 // add active class to nav links
@@ -81,3 +72,21 @@ const handleScrollAnimation = () => {
 };
 
 window.addEventListener("scroll", handleScrollAnimation);
+
+// const closeLinks = document.querySelectorAll('.mobile-ul li a').addEventListener('click', () => {
+//   console.log("clicked")
+// })
+
+// when click on the mobile menu link, the menu and the mask closes
+document.querySelectorAll('.mobile-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    showMenu.style.display = "none"
+    mask.style.display = "none"
+  })
+})
+
+
+// Show more about me when button clicked
+document.querySelector('.about_me').addEventListener('click', () => {
+  document.getElementById('text').classList.toggle('fade')
+})

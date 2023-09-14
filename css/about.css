@@ -26,7 +26,7 @@
     display: block;
     margin-top: 20px;
   }
-  .about .skills h3 {
+  .about .skills .skills-title {
     color: var(--second-color);
     font-weight: normal;
     padding-bottom: 20px;
