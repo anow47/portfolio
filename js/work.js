@@ -10,12 +10,12 @@ const projects = [
     },
     {
         id: 2,
-        title: "Portfolio",
-        description: "HTML, CSS, and JavaScript.",
+        title: "Multi-Step-Form",
+        description: "HTML, CSS, Sass, and JS.",
         alt: "Portfolio",
-        imgUrl: "images/work/portfolio.webp",
-        github: "https://github.com/anow47/portfolio",
-        live: "#"
+        imgUrl: "images/work/mult-step-form.webp",
+        github: "https://github.com/anow47/multi-step-form-main",
+        live: "https://anow47.github.io/multi-step-form-main/"
     },
     {
         id: 3,

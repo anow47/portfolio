@@ -9,6 +9,7 @@
     color: var(--second-color);
     font-size: 40px;
     text-transform: uppercase;
+    margin: 1rem 0;
   }
   .landing .left-box .text h1 {
     color: var(--main-color);
@@ -16,7 +17,7 @@
   }
   .landing .left-box .text p {
     color: var(--second-color);
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     text-transform: uppercase;
   }
   .landing .right-box {
