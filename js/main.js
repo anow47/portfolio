@@ -1,7 +1,8 @@
 //Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
-let mask = document.getElementById("mask")
-let showMenu = document.getElementById("mobile-ul");
-let logo = document.getElementById("logo-mobile");
+const mask = document.getElementById("mask")
+const showMenu = document.getElementById("mobile-ul");
+const logo = document.getElementById("logo-mobile");
+const header = document.querySelector('.header_container')
 
 function toggleMenu() {
   mask.style.display === "none"? mask.style.display = "block" : mask.style.display = "none"
@@ -90,3 +91,12 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
 document.querySelector('.about_me').addEventListener('click', () => {
   document.getElementById('text').classList.toggle('fade')
 })
+
+//when scroll down the header heigth shrinks 
+window.onscroll = () => {
+  if(scrollY >= 220){
+    header.classList.add('stick')
+  }else{
+    header.classList.remove('stick')
+  }
+}
