@@ -1,7 +1,7 @@
 .about{
   min-height: 100vh;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .img_box{
   width: 40%;
@@ -14,8 +14,8 @@
   margin: 1rem 0;
 }
 .img {
-    margin: 40px auto;
-    width: 620px;
+    margin: 2.5rem auto;
+    width: 38.75rem;
     max-width: 100%;
   }
   .about .skills_container {
@@ -24,20 +24,20 @@
   }
   .about .skills {
     display: block;
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
   .about .skills .skills-title {
     color: var(--second-color);
     font-weight: normal;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
   }
   .about .skills > div,
   .github {
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 0.625rem;
+    padding: 0.313rem;
     display: inline-flex;
     background-color: var(--second-bg-color);
-    margin: 6px;
+    margin: 0.375rem;
     transition: 0.3s;
     box-shadow: var(--box-shadow)
   }
@@ -46,19 +46,19 @@
     background-color: var(--bg-color);
   }
   .no-icon {
-    margin: 5px;
-    font-size: 13px;
+    margin: 0.313rem;
+    font-size: 0.813rem;
   }
   .about .skills i {
-    font-size: 22px;
-    padding-left: 5px;
+    font-size: 1.375rem;
+    padding-left: 0.313rem;
   }
   .about .skills p,
   a {
     color: var(--second-color);
-    padding: 0px 10px;
-    transform: translateY(3px);
-    font-size: 13px;
+    padding: 0 0.625rem;
+    transform: translateY(0.188rem);
+    font-size: 0.813rem;
   }
   .fa-html5 {
     color: #ff7f50;
@@ -87,17 +87,17 @@
 
 /*======More About Me======*/
 .about_me {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
   .about_me button {
     display: grid;
-    margin: 10px auto;
+    margin: 0.625rem auto;
     background-color: var(--second-bg-color);
     color: #df4d18;
-    padding: 10px 10px;
+    padding: 0.625rem;
     border-radius: 7px;
     border: var(--second-bg-color);
-    font-size: 17px;
+    font-size: 1.063rem;
     transition: 0.3s;
     box-shadow: var(--box-shadow);
   }
@@ -106,11 +106,11 @@
     transform: scale(1.1);
   }
   #text {
-    width: 100%;
-    margin: 10px auto;
-    padding-bottom: 50px;
+    width: 95%;
+    margin: 0.625rem auto;
+    padding-bottom: 3.125rem;
     color: var(--second-color);
-    line-height: 25px;
+    line-height: 1.4;
     opacity: 0;
     height: 0;
     -webkit-transition: opacity 0.7s ease-in-out;
@@ -125,14 +125,14 @@
   }
   @media screen and (max-width: 1200px) {
     .about_me p {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
     .skills {
-      margin-top: 0px;
+      margin-top: 0;
     }
     .skills > div {
-      padding: 3px;
-      margin: 3px;
+      padding: 0.188rem;
+      margin: 0.188rem;
     }
   }
   @media screen and (max-width: 1200px){
@@ -153,13 +153,13 @@
       margin: 0 auto;
     }
     .about .about_me {
-      margin-top: 50px;
+      margin-top: 3.125rem;
     }
     .about .about_me {
-      margin-top: 20px;
+      margin-top: 1.25rem;
     }
     .about .skills > div {
-      padding: 5;
-      margin: 5px;
+      padding: 0.313rem;
+      margin: 0.313rem;
     }
   }

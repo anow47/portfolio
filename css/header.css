@@ -3,16 +3,16 @@ header .header_container {
   position: fixed;
   z-index: 2;
   background-color: var(--third-bg-color);
-  padding: 0 50px;
-  height: 110px;
+  padding: 0 3.125rem;
+  height: 6.25rem;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
 }
 .stick {
-  height: 60px !important;
+  height: 3.75rem !important;
 }
 header .logo a {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--second-color);
   font-weight: normal;
@@ -32,10 +32,10 @@ header .logo a:hover{
 }
 .desktop ul li {
   list-style-type: none;
-  padding: 0px 10px;
+  padding: 0 0.625rem;
 }
 .desktop ul li a {
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--second-color);
@@ -48,8 +48,8 @@ header .logo a:hover{
 .desktop ul li a.btn {
   width: fit-content;
   border: 1px solid var(--main-color);
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 0.625rem;
+  font-size: 1rem;
   background: linear-gradient(to right, var(--main-color) 50%, #2b2929 50%);
   background-size: 200% 100%;
   background-position: right bottom;
@@ -62,8 +62,8 @@ a:is(:link, :active, :visited).active {
 /********* Mobile nav bar  ********/
 .toggle-menu {
   color: var(--main-color);
-  font-size: 40px;
-  top: 28px;
+  font-size: 2.5rem;
+  top: 1.75rem;
 }
 .mask{
   display: none;
@@ -78,17 +78,17 @@ a:is(:link, :active, :visited).active {
 }
 .fa-times{
   color: #fff;
-  font-size: 30px;
+  font-size: 1.875rem;
   position: absolute;
   left: 90%;
-  top: 20px;
+  top: 1.25em;
   z-index: 2;
 }
 .mobile-nav ul {
   display: none;
   position: fixed;
   min-height: 100%;
-  min-width: 300px;
+  min-width: 18.75rem;
   background-color: var(--bg-color);
   left: 0;
   top: 0;
@@ -98,11 +98,11 @@ a:is(:link, :active, :visited).active {
   animation: bounceInLeft 0.5s;
 }
 .mobile-nav ul li {
-  padding: 40px 0;
+  padding: 2.5rem 0;
   border-bottom: 2px solid var(--main-color);
 }
 .mobile-nav .links{
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .mobile-nav ul li a{
   font-weight: 600;
@@ -110,18 +110,18 @@ a:is(:link, :active, :visited).active {
 .mobile-nav ul li a.btn {
   background: var(--bg-color);
   border: var(--bg-color);
-  font-size: 18px;
+  font-size: 1.125rem;
   box-shadow: none;
 }
 .logo-mobile a{
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 /**** Header Responsive ****/
 @media screen and (max-width: 768px) {
   header .header_container {
     top: 0;
-    padding: 15px 20px;
+    padding: 0.938rem 1.25rem;
   }
   header .header_container .logo a {
     display: none;
@@ -140,7 +140,7 @@ a:is(:link, :active, :visited).active {
 }
 
 /*=======bounceInRight the toggle menu when clicked========*/
-@-webkit-keyframes bounceInLeft {
+@keyframes bounceInLeft {
   from,
   60%,
   75%,

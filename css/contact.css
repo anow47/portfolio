@@ -1,20 +1,20 @@
 .contact .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
   }
   .engage{
-    padding-bottom: 70px;
+    padding-bottom: 4.375rem;
   }
   .engage .engage-header{
     color: var(--main-color);
-    padding-bottom: 10px;
-    font-size: 23px;
+    padding-bottom: 0.625rem;
+    font-size: 1.438rem;
     text-shadow: 0 0 2px var(--main-color);
   }
   .engage .engage-message {
     color: #fff;
-    font-size: 20px;
-    text-shadow: 0 0 4px #FFf;
+    font-size: 1.25rem;
+    text-shadow: 0 0 0.25rem #FFf;
   }
   .contact form {
     width: 70%;
@@ -25,16 +25,16 @@
     display: block;
     border: none;
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     border-radius: 5px;
-    margin: 10px 0 0;
+    margin: 0.625rem 0 0;
     background-color: #414141;
     color: var(--second-color);
     outline: none;
     box-shadow: var(--box-shadow);
   }
   textarea {
-    height: 200px;
+    height: 12.5rem;
   }
   ::placeholder {
     color: #d6c4c4;
@@ -64,21 +64,30 @@
       width: 80%;
     }
     .engage{
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 0.938rem;
+      padding-right: 0.938rem;
     }
   }
   @media screen and (max-width: 768px) {
     .contact .container {
-      padding-top: 20px;
+      padding-top: 1.25rem;
+    }
+    .contact .section-title {
+      padding-bottom: 1rem;
     }
     textarea {
-      height: 120px;
+      height: 7.5rem;
     }
     .contact form button {
-      letter-spacing: 0px;
+      letter-spacing: 0;
+    }
+    .engage .engage-header{
+      font-size: 1.1rem;
+    }
+    .engage .engage-message {
+      font-size: 0.9rem;
     }
     .engage{
-      padding-bottom: 40px;
+      padding-bottom: 2.5rem;
     }
   }
