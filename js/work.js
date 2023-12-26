@@ -6,7 +6,8 @@ const projects = [
         alt: "E-store",
         imgUrl: "images/work/E-store.webp",
         github: "https://github.com/anow47/my-store",
-        live: "https://anow47.github.io/my-store/"
+        live: "https://anow47.github.io/my-store/",
+        btnName: "Live Demo"
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ const projects = [
         alt: "Portfolio",
         imgUrl: "images/work/mult-step-form.webp",
         github: "https://github.com/anow47/multi-step-form-main",
-        live: "https://anow47.github.io/multi-step-form-main/"
+        live: "https://anow47.github.io/multi-step-form-main/",
+        btnName: "Live Demo"
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ const projects = [
         alt: "Home_furniture",
         imgUrl: "images/work/furniture.webp",
         github: "ttps://github.com/anow47/home-furniture",
-        live: "https://anow47.github.io/home-furniture/"
+        live: "https://anow47.github.io/home-furniture/",
+        btnName: "Live Demo"
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ const projects = [
         alt: "Alsnap_Real_Estate",
         imgUrl: "images/work/agari2030.webp",
         github: "#",
-        live: "https://agari2030.com/"
+        live: "https://agari2030.com/",
+        btnName: "Live Website"
     },
     {
         id: 5,
@@ -42,7 +46,8 @@ const projects = [
         alt: "Sneakers",
         imgUrl: "images/work/sneakers.webp",
         github: "https://github.com/anow47/sneakers",
-        live: "https://anow47.github.io/sneakers/"
+        live: "https://anow47.github.io/sneakers/",
+        btnName: "Live Demo"
     },
 ]
 const card = projects.map(item => {
@@ -54,7 +59,7 @@ const card = projects.map(item => {
         <h2 class="project-title"><span>${item.title}: </span>${item.description}</h2>
         <div class="porject_item-cta">
         <a href=${item.github} class="btn" target="_blank">github</a>
-        <a href=${item.live} class="live-demo" target="_blank">Live Demo</a>
+        <a href=${item.live} class="live-demo" target="_blank">${item.btnName}</a>
       </div>
     </article>
   `
