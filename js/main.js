@@ -1,19 +1,30 @@
 //Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
-const mask = document.getElementById("mask")
-const showMenu = document.getElementById("mobile-ul");
+const mask = document.querySelector('.mask')
+const showMenu = document.querySelector('.toggle-menu');
+const mobileMenu = document.querySelector('.mobile-ul')
 const logo = document.getElementById("logo-mobile");
 const header = document.querySelector('.header_container')
 
-function toggleMenu() {
-  mask.style.display === "none"? mask.style.display = "block" : mask.style.display = "none"
-  showMenu.style.display === "none" ? showMenu.style.display = "block" : showMenu.style.display = "none";
+showMenu.addEventListener('click', () => {
+	toggleMenu(mask)
+	toggleMenu(mobileMenu)
+})
+mask.addEventListener('click', () => {
+	mobileMenu.style.display = "none"
+	mask.style.display = "none"
+	logo.style.display = "block"
+})
+const toggleMenu = (element) => {
+  element.style.display = element.style.display === 'none'? 'block' : 'none'
   logo.style.display = "none"
 }
-function closeToggleMenu() {
-  showMenu.style.display = "none"
-  mask.style.display = "none"
-  logo.style.display = "block"
-}
+// when click on the mobile menu link, the menu and the mask closes
+document.querySelectorAll('.mobile-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.style.display = "none"
+    mask.style.display = "none"
+  })
+})
 
 // add active class to nav links
 const navLinks = document.querySelectorAll('nav a')
@@ -73,19 +84,6 @@ const handleScrollAnimation = () => {
 };
 
 window.addEventListener("scroll", handleScrollAnimation);
-
-// const closeLinks = document.querySelectorAll('.mobile-ul li a').addEventListener('click', () => {
-//   console.log("clicked")
-// })
-
-// when click on the mobile menu link, the menu and the mask closes
-document.querySelectorAll('.mobile-nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    showMenu.style.display = "none"
-    mask.style.display = "none"
-  })
-})
-
 
 // Show more about me when button clicked
 document.querySelector('.about_me').addEventListener('click', () => {
