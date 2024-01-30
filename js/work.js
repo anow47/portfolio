@@ -49,6 +49,16 @@ const projects = [
         live: "https://anow47.github.io/sneakers/",
         btnName: "Live Demo"
     },
+    {
+        id: 5,
+        title: "Repeat",
+        description: "Business website.",
+        alt: "Repeat",
+        imgUrl: "images/work/repeat-free-template.webp",
+        github: "https://github.com/anow47/Repeat",
+        live: "https://anow47.github.io/Repeat/",
+        btnName: "Live Demo"
+    },
 ]
 const card = projects.map(item => {
   return`
