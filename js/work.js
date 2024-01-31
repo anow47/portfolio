@@ -21,12 +21,12 @@ const projects = [
     },
     {
         id: 3,
-        title: "Home-furniture",
-        description: "HTML, SCSS, JavaScript.",
+        title: "Comfy House",
+        description: "vanilla JavaScript, Contentful",
         alt: "Home_furniture",
-        imgUrl: "images/work/furniture.webp",
-        github: "ttps://github.com/anow47/home-furniture",
-        live: "https://anow47.github.io/home-furniture/",
+        imgUrl: "images/work/comfy-house.webp",
+        github: "https://github.com/anow47/comfy-house",
+        live: "https://anow47.github.io/comfy-house/",
         btnName: "Live Demo"
     },
     {
