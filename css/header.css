@@ -66,7 +66,7 @@ a:is(:link, :active, :visited).active {
   top: 1.75rem;
 }
 .mask{
-  display: none;
+  visibility: hidden;
   position: fixed;
   min-width: 100%;
   min-height: 100vh;
@@ -74,18 +74,16 @@ a:is(:link, :active, :visited).active {
   top: 0;
   left: 0;
   z-index: 1;
-  transition: 0.5s;
 }
 .fa-times{
   color: #fff;
   font-size: 1.875rem;
   position: absolute;
   left: 90%;
-  top: 1.25em;
+  top: 1em;
   z-index: 2;
 }
-.mobile-nav ul {
-  display: none;
+.mobile-ul {
   position: fixed;
   min-height: 100%;
   min-width: 18.75rem;
@@ -95,7 +93,16 @@ a:is(:link, :active, :visited).active {
   margin: 0;
   padding: 0;
   z-index: 2;
-  animation: bounceInLeft 0.5s;
+  transform: translateX(-100%);
+  transition: 0.5s;
+  /* animation: bounceInLeft 0.5s; */
+  list-style: none;
+}
+.show-nav-bar{
+  transform: translateX(0);
+}
+.transparent{
+  visibility: visible;
 }
 .mobile-nav ul li {
   padding: 2.5rem 0;
@@ -135,7 +142,7 @@ a:is(:link, :active, :visited).active {
     display: none;
   }
   .logo-mobile{
-    display: none;
+    visibility: hidden;
   }
 }
 

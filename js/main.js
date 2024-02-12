@@ -2,27 +2,26 @@
 const mask = document.querySelector('.mask')
 const showMenu = document.querySelector('.toggle-menu');
 const mobileMenu = document.querySelector('.mobile-ul')
-const logo = document.getElementById("logo-mobile");
+const logo = document.querySelector(".logo-mobile");
 const header = document.querySelector('.header_container')
 
 showMenu.addEventListener('click', () => {
-	toggleMenu(mask)
-	toggleMenu(mobileMenu)
+  mobileMenu.classList.add('show-nav-bar')
+  mask.classList.add('transparent')
+  logo.style.visibility = 'hidden'
 })
 mask.addEventListener('click', () => {
-	mobileMenu.style.display = "none"
-	mask.style.display = "none"
-	logo.style.display = "block"
+  mobileMenu.classList.remove('show-nav-bar')
+  mask.classList.remove('transparent')
+  logo.style.visibility = 'visible'
 })
-const toggleMenu = (element) => {
-  element.style.display = element.style.display === 'none'? 'block' : 'none'
-  logo.style.display = "none"
-}
+
 // when click on the mobile menu link, the menu and the mask closes
 document.querySelectorAll('.mobile-nav a').forEach(link => {
   link.addEventListener('click', () => {
-    mobileMenu.style.display = "none"
-    mask.style.display = "none"
+    mobileMenu.classList.remove('show-nav-bar')
+    mask.classList.remove('transparent')
+    logo.style.visibility = 'visible'
   })
 })
 
@@ -86,7 +85,7 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", handleScrollAnimation);
 
 // Show more about me when button clicked
-document.querySelector('.about_me').addEventListener('click', () => {
+document.querySelector('.about-me-btn').addEventListener('click', () => {
   document.getElementById('text').classList.toggle('fade')
 })
 

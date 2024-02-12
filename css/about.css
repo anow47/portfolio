@@ -89,7 +89,7 @@
 .about_me {
     margin-top: 1.25rem;
   }
-  .about_me button {
+  .about-me-btn {
     display: grid;
     margin: 0.625rem auto;
     background-color: var(--second-bg-color);
@@ -101,7 +101,7 @@
     transition: 0.3s;
     box-shadow: var(--box-shadow);
   }
-  .about_me button:hover,
+  .about-me-btn:hover,
   .github:hover {
     transform: scale(1.1);
   }
