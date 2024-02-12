@@ -145,42 +145,43 @@ a:is(:link, :active, :visited).active {
     visibility: hidden;
   }
 }
-
-/*=======bounceInRight the toggle menu when clicked========*/
-@keyframes bounceInLeft {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  /***** header stars / moon / svg  *****/
+  .astra_container{
+    padding-top: 3.75rem;
   }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
-    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  .astra{
+    height: 0;
+    z-index: 1;
+    background-color: var(--third-bg-color);
   }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
-    transform: translate3d(25px, 0, 0) scaleX(1);
+  .astra .fa-moon {
+    color: #df732b62;
+    position: absolute;
+    font-size: 1.25rem;
+    top: 20%;
+    left: 30%;
   }
-
-  75% {
-    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
-    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  .astra .fa-star {
+    color: var(--second-color);
+    font-size: 3px;
+    position: absolute;
+    top: 20%;
+    right: 42%;
   }
-
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
-    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  .astra #star {
+    color: var(--second-color);
+    font-size: 3px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
   }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+  .wave {
+    height: 12.5rem;
   }
-}
+  .sunset {
+    display: inline-block;
+  }
+  svg path {
+    stroke: none;
+    fill: var(--third-bg-color);
+  }

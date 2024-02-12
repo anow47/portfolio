@@ -21,7 +21,6 @@
   border: 1px solid transparent;
   transition: 0.3s;
   box-shadow: var(--box-shadow);
-
 }
 .porject_items:hover {
   border-color: var(--second-bg-color);

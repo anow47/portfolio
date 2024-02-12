@@ -60,7 +60,7 @@
       </svg>
       </div>
     </div>
-    <!--======Start Landing======-->
+    <!--======Start Hero======-->
     <section class="landing">
       <div class="container flex">
         <div class="left-box">
@@ -69,14 +69,12 @@
             <h1>WELCOME, MY NAME IS:</h1>
             <h2 class="name-title">Hamouda Mohammed</h2>
             <p>web front-end developer</p>
-            <a
-              href="resume/Resume-Hamouda-Adam.pdf"
-              open="Hamouda-Mohammed"
-              target="_blank"
-              class="btn"
-              >Download CV</a
-            >
-            <a href="#work" class="live-demo">My Work</a>
+            <div class="btn-container">
+              <a href="resume/Resume-Hamouda-Adam.pdf" open="Hamouda-Mohammed" target="_blank" class="btn">
+                Download CV
+              </a>
+              <a href="#work" class="live-demo">My Work</a>
+            </div>
           </div>
         </div>
         <div class="right-box">
@@ -95,10 +93,10 @@
     <!--======Start Bio======-->
     <section class="about" id="about">
       <h1 class="section-title">About</h1>
-      <div class="box_container flex scroll-element js-scroll fade-in">
+      <div class="box_container flex">
         <div class="img_box flex cnt align">
           <svg
-            class="blob"
+            class="blob scroll-element js-scroll fadeInUp"
             viewBox="0 0 479 467"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -127,8 +125,8 @@
           </svg>
         </div>
         <div class="skills_box">
-          <div class="skills">
-            <h2 class="skills-title">Skills & Tools</h2>
+          <h2 class="skills-title scroll-element js-scroll fadeInUp delay-0-7s">Skills & Tools</h2>
+          <div class="skills scroll-element js-scroll fadeInUpSlow delay-0-9s">
             <div>
               <i class="fab fa-html5"></i>
               <p>HTML</p>
@@ -169,7 +167,7 @@
             </div>
           </div>
           <div class="about_me">
-            <button class="about-me-btn">Read about me <i class="fas fa-arrow-down"></i></button>
+            <button class="about-me-btn scroll-element js-scroll fadeInUpSlower delay-1-2s">Read about me <i class="fas fa-arrow-down"></i></button>
             <p id="text">
               Hello,<br>
               I'm a dedicated web front-end developer with a mission to make a significant impact in the tech industry. 
@@ -183,14 +181,14 @@
       </div>
     </section>
     <!--======Start Contact======-->
-    <section class="contact scroll-element js-scroll fade-in" id="contact">
-      <h1 class="section-title">Contact</h1>
+    <section class="contact" id="contact">
+      <h1 class="section-title scroll-element js-scroll fadeInUp delay-0-7s">Contact</h1>
       <div class="container">
         <div class="engage">
-          <p class="engage-header">You got something in mind!</p>
-          <p class="engage-message">Let's talk then, kindley leave me a message or DM me on my social acoounts down bellow.</p>
+          <p class="engage-header scroll-element js-scroll fadeInUp delay-0-7s">You got something in mind!</p>
+          <p class="engage-message scroll-element js-scroll fadeInUpSlow delay-0-9s">Let's talk then, kindley leave me a message or DM me on my social acoounts down bellow.</p>
         </div>
-        <form id="contact-form">
+        <form id="contact-form" class="scroll-element js-scroll fadeInUpSlower delay-1-2s">
           <input type="text" placeholder="Name" name="user_name" aria-label="Your Name" required/>
           <input type="email" placeholder="Email" name="user_email" aria-label="Your email" required/>
           <textarea placeholder="" name="message" aria-label="Your message" required></textarea>

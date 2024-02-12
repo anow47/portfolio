@@ -1,6 +1,6 @@
 /* Import the other css files  */
 @import url("header.css");
-@import url("landing.css");
+@import url("hero.css");
 @import url("work.css");
 @import url("about.css");
 @import url("contact.css");
@@ -122,7 +122,6 @@ a{
 }
 /* End Global Rules*/
 
-
 /*==========Styling scrollable elements==========*/
 .js-scroll {
   opacity: 0;
@@ -144,7 +143,54 @@ a{
     opacity: 1;
   }
 }
-
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 70px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUpSlow {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+} 
+@keyframes fadeInUpSlower {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 200px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.scrolled.fadeInUp{
+  animation: fadeInUp 1s ease-in-out both;
+}
+.scrolled.fadeInUpSlow{
+  animation: fadeInUpSlow;
+}
+.scrolled.fadeInUpSlower{
+  animation: fadeInUpSlower;
+}
+.scrolled.delay-0-7s{
+  animation-duration: 0.7s;
+}
+.scrolled.delay-0-9s{
+  animation-duration: 0.9s;
+}
+.scrolled.delay-1-2s{
+  animation-duration: 1.2s;
+}
 .bounceInRight {
   animation-name: bounceInRight;
 }
