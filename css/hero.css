@@ -29,7 +29,8 @@
     width: 40%;
   }
   .landing .right-box img {
-    width: 18.75rem;
+    width: 100%;
+    max-width: 18.75rem;
     height: 18.75rem;
     position: relative;
     top: -4rem;
@@ -46,6 +47,13 @@
   @media screen and (max-width: 768px) {
     .landing .container{
       display: block;
+    }
+    .landing .container {
+      padding-bottom: 0;
+    }
+    .landing .right-box img {
+      max-width: 15.75rem;
+      height: 15.75rem;
     }
     .landing .left-box,.landing .right-box {
       width: 100%;

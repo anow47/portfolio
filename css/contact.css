@@ -72,6 +72,9 @@
     .contact .container {
       padding-top: 1.25rem;
     }
+    .contact form {
+      width: 100%;
+    }
     .contact .section-title {
       padding-bottom: 1rem;
     }

@@ -37,6 +37,10 @@ footer {
     footer .container::before {
       display: none;
     }
+    footer{
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+    }
     footer .container {
       display: grid;
       align-items: center;

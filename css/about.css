@@ -29,7 +29,7 @@
   .about .skills-title {
     color: var(--second-color);
     font-weight: normal;
-    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
     text-align: center;
   }
   .about .skills > div,
@@ -149,8 +149,12 @@
     }
   }
   @media screen and (max-width: 768px) {
+    .about{
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+    }
     .about .blob {
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
     }
     .about .about_me {

@@ -24,28 +24,28 @@ header .logo a:hover{
   transition: 0.3s;
 }
 /************  Desktop nav bar  *************/
-.desktop {
+.desktop-nav {
   width: 100%;
 }
-.desktop ul {
+.desktop-nav ul {
   display: flex;
 }
-.desktop ul li {
+.desktop-nav ul li {
   list-style-type: none;
   padding: 0 0.625rem;
 }
-.desktop ul li a {
+.desktop-nav ul li a {
   font-size: 0.938rem;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--second-color);
   transition: 0.3s;
 }
-.desktop ul li a:hover {
+.desktop-nav ul li a:hover {
   color: var(--main-color);
   transition: 0.3s;
 }
-.desktop ul li a.btn {
+.desktop-nav ul li a.btn {
   width: fit-content;
   border: 1px solid var(--main-color);
   border-radius: 0.625rem;
@@ -60,6 +60,9 @@ a:is(:link, :active, :visited).active {
 }
 
 /********* Mobile nav bar  ********/
+.mobile-nav{
+  display: none;
+}
 .toggle-menu {
   color: var(--main-color);
   font-size: 2.5rem;
@@ -95,7 +98,6 @@ a:is(:link, :active, :visited).active {
   z-index: 2;
   transform: translateX(-100%);
   transition: 0.5s;
-  /* animation: bounceInLeft 0.5s; */
   list-style: none;
 }
 .show-nav-bar{
@@ -128,13 +130,16 @@ a:is(:link, :active, :visited).active {
 @media screen and (max-width: 768px) {
   header .header_container {
     top: 0;
-    padding: 0.938rem 1.25rem;
+    padding: 0.938rem 0.625rem;
   }
   header .header_container .logo a {
     display: none;
   }
-  .desktop ul{
+  .desktop-nav ul{
     display: none;
+  }
+  .mobile-nav{
+    display: flex;
   }
 }
 @media only screen and (min-width: 768px) {

@@ -52,13 +52,13 @@ a{
 .flex{
   display: flex;
 }
-.cnt{
+.justify-content-center{
   justify-content: center;
 }
-.space{
+.space-between{
   justify-content: space-between;
 }
-.align{
+.align-items-center{
   align-items: center;
 }
 .container {
@@ -104,6 +104,10 @@ a{
     padding: 0.563rem 0.625rem;
     font-size: 0.938rem;
     margin-right: 5px;
+  }
+  .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
 }
 @media screen and (max-width: 991px) {
