@@ -29,16 +29,16 @@ const projects = [
         live: "https://anow47.github.io/comfy-house/",
         btnName: "Live Demo"
     },
-    {
-        id: 4,
-        title: "Alsnap Real Estate",
-        description: "WordPress, HTML, CSS.",
-        alt: "Alsnap_Real_Estate",
-        imgUrl: "images/work/agari2030.webp",
-        github: "#",
-        live: "https://agari2030.com/",
-        btnName: "Live Website"
-    },
+    // {
+    //     id: 4,
+    //     title: "Alsnap Real Estate",
+    //     description: "WordPress, HTML, CSS.",
+    //     alt: "Alsnap_Real_Estate",
+    //     imgUrl: "images/work/agari2030.webp",
+    //     github: "#",
+    //     live: "https://agari2030.com/",
+    //     btnName: "Live Website"
+    // },
     {
         id: 5,
         title: "Sneakers",
