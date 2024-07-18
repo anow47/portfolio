@@ -97,3 +97,11 @@ window.onscroll = () => {
     header.classList.remove('stick')
   }
 }
+
+// Display dynamic year date
+const year = document.querySelector('.year')
+function displayYear() {
+  const currentDate = new Date()
+  return currentDate.getFullYear()
+}
+year.textContent = displayYear()
